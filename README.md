@@ -30,4 +30,3 @@ Using SSH:
 ```
 $ USE_SSH=true yarn deploy
 ```
-cmd /C 'set "GIT_USER=Nicholas-Sidharta12365" && USE_SSH=true yarn deploy'
