@@ -48,7 +48,7 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section style={{ backgroundImage: "url('/img/starfield.webp')", backgroundSize: "cover" }} className={styles.features}>
+    <section style={{ backgroundImage: "url('img/starfield.webp')", backgroundSize: "cover" }} className={styles.features}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
