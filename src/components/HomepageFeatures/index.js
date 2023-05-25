@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'READ TO THE END',
+    Svg: require('@site/static/img/documentation.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A lot of problem are caused from not or partially reading only some part of the document, please read the documentation to the end.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'FOLLOW THE GUIDELINES',
+    Svg: require('@site/static/img/guidelines.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The documentation provides the best practices and the conventions that the developer team has used, please follow it.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'DO NOT USE WINDOWS',
+    Svg: require('@site/static/img/linux.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This project is a linux based project, thus having windows tamper the codes could destroy the project, please cooperate by using linux while developing/editing the project.
       </>
     ),
   },
@@ -51,7 +48,7 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section style={{ backgroundImage: "url('/img/starfield.webp')", backgroundSize: "cover" }} className={styles.features}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

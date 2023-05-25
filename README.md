@@ -1,20 +1,19 @@
-# Website
+# Docubase
+A Template base interface for Docusaurus Projects in CBK2000 Group
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 2](https://docusaurus.io/)
 
+## How to use
 ### Installation
 
 ```
 $ yarn
 ```
-
 ### Local Development
 
 ```
 $ yarn start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
 
@@ -31,11 +30,4 @@ Using SSH:
 ```
 $ USE_SSH=true yarn deploy
 ```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+cmd /C 'set "GIT_USER=Nicholas-Sidharta12365" && USE_SSH=true yarn deploy'
