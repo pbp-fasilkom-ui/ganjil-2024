@@ -77,9 +77,9 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog/welcome', label: 'Kambing-Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/cbk2000/docubase',
             label: 'GitHub',
             position: 'right',
           },
