@@ -15,13 +15,6 @@ function HomepageHeader() {
       <div className="container">
         <h1 style={{ color: 'white' }} className="hero__title">{siteConfig.title}</h1>
         <p style={{ color: 'white' }} className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            This Is The Way ❗
-          </Link>
-        </div>
       </div>
     </header>
   );
@@ -35,7 +28,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
         <QuickAccess />
       </main>
     </Layout>

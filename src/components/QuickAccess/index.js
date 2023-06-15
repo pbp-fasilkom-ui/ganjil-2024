@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./QuickAccess.css";
+import Card from '@site/src/components/QuickAccess/QuickAccessCard';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -79,20 +80,10 @@ const Index = () => {
         />
       </div>
       <div className="grid-container">
+        
         {filteredCards.map((card, index) => (
           <a href={card.target} className="" key={card.title}>
-            <article className="card" key={index}>
-              <img src={card.image} alt="Place image here" />
-              <div className="card_content">
-                <span className="card_title">{card.title}</span>
-                <span className="card_subtitle">{card.subtitle}</span>
-                <p className="card_description">
-                  {card.content.length > 200
-                    ? `${card.content.substring(0, 200)}...`
-                    : card.content}
-                </p>
-              </div>
-            </article>
+            <Card title={card.title} image={card.image} description={card.content} subtitle={card.subtitle} />
           </a>
         ))}
       </div>
