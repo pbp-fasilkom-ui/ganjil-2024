@@ -10,6 +10,13 @@ const Index = () => {
 
   const cards = [
     {
+      title: "All new debian 12",
+      subtitle: "The one and only",
+      image: "img/debian-12.jpg",
+      content: "Debian is a free and open-source operating system known for its stability and large software repository. In this comprehensive guide, we will explore the features and characteristics of Debian, guide you through the installation process, explain package management using APT, and provide tips for system administration and customization.",
+      target: "docs/tutorial-extras/manage-docs-versions"
+    },
+    {
       title: "How to use Linux 101",
       subtitle: "Because it's too hard",
       image: "https://www.pengertianku.net/wp-content/uploads/2017/08/pengertian-linux.jpg",
