@@ -1,81 +1,92 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./QuickAccess.css";
 import Card from "@site/src/components/QuickAccess/QuickAccessCard";
+import markdown from "markdown";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [cards, setCards] = useState([]);
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
-
-  const cards = [
-    {
-      title: "All new debian 12",
-      subtitle: "The one and only",
-      image: "img/debian-12.jpg",
-      content:
-        "Debian is a free and open-source operating system known for its stability and large software repository. In this comprehensive guide, we will explore the features and characteristics of Debian, guide you through the installation process, explain package management using APT, and provide tips for system administration and customization.",
-      target: "docs/tutorial-extras/manage-docs-versions",
-    },
-    {
-      title: "How to use Linux 101",
-      subtitle: "Because it's too hard",
-      image:
-        "https://www.pengertianku.net/wp-content/uploads/2017/08/pengertian-linux.jpg",
-      content:
-        "In this tutorial, we will cover the basics of using Linux, including navigating the file system, running commands, managing processes, and more. We will provide step-by-step instructions and explanations to help you become familiar with Linux and its command-line interface.",
-      target: "docs/intro",
-    },
-    {
-      title: "All About Docusaurus",
-      subtitle: "A Better Markdown",
-      image: "https://docusaurus.io/img/docusaurus.svg",
-      content:
-        "Docusaurus is a documentation framework that makes it easy to build, deploy, and maintain documentation websites. In this comprehensive guide, we will dive into the features and benefits of Docusaurus, how to install and configure it, and how to create and customize your documentation using Markdown.",
-      target: "docs/category/tutorial---basics",
-    },
-    {
-      title: "Setup VirtualBox",
-      subtitle: "Because you use windows",
-      image: "https://telset.id/wp-content/uploads/2016/08/virtbox_1.jpg",
-      content:
-        "VirtualBox is a powerful virtualization software that allows you to run multiple operating systems on your Windows machine. This tutorial will walk you through the process of setting up VirtualBox, creating virtual machines, installing guest operating systems, and managing your virtual environment.",
-      target: "docs/tutorial-basics/create-a-page",
-    },
-    {
-      title: "Setup Putty",
-      subtitle: "Since you can't copy paste in Unix",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PuTTY_Icon_upstream.svg/1200px-PuTTY_Icon_upstream.svg.png",
-      content:
-        "PuTTY is a popular SSH and Telnet client for Windows that provides a secure way to connect to remote servers and devices. In this tutorial, we will guide you through the installation and configuration of PuTTY, explain how to establish SSH connections, and demonstrate useful features like session management and key authentication.",
-      target: "docs/tutorial-basics/create-a-document",
-    },
-    {
-      title: "Bash 101",
-      subtitle: "As if there aren't 50 Billion Tutorials Already",
-      image:
-        "https://www.codelivly.com/wp-content/uploads/2023/02/Que-es-Bash-Script.jpg",
-      content:
-        "Bash is a powerful scripting language commonly used in Unix-based systems. This tutorial aims to provide a beginner-friendly introduction to Bash scripting, covering the basics of variables, conditionals, loops, functions, and more. By the end, you'll have a solid foundation in writing and executing Bash scripts.",
-      target: "docs/category/tutorial---extras",
-    },
-    {
-      title: "All About Debian",
-      subtitle: "It's an OS...",
-      image: "https://www.debian.org/Pics/debian-logo-1024x576.png",
-      content:
-        "Debian is a free and open-source operating system known for its stability and large software repository. In this comprehensive guide, we will explore the features and characteristics of Debian, guide you through the installation process, explain package management using APT, and provide tips for system administration and customization.",
-      target: "docs/tutorial-extras/manage-docs-versions",
-    },
-  ];
 
   const filteredCards = searchQuery
     ? cards.filter((card) =>
         card.title.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : cards;
+
+  useEffect(() => {
+    // Dynamically load the markdown files
+    const loadMarkdownFiles = async () => {
+      const markdownFiles = await importAll(require.context("/docs", true, /\.md$/));
+
+      const processedCards = await Promise.all(
+        markdownFiles.map((file) => processMarkdown(file))
+      );
+
+      setCards(processedCards);
+    };
+
+    loadMarkdownFiles();
+  }, []);
+
+  const importAll = (context) => {
+    const keys = context.keys();
+    const files = keys.map(context);
+    const nestedFiles = files.reduce((acc, file, index) => {
+      const pathParts = keys[index].split('/');
+      const directory = pathParts[1];
+      const filename = pathParts[pathParts.length - 1];
+      const filePath = `${directory}/${filename}`;
+      
+      return {
+        ...acc,
+        [filePath]: file.default
+      };
+    }, {});
+
+    return Object.entries(nestedFiles).map(([path, content]) => ({
+      path,
+      content
+    }));
+  };
+
+  const processMarkdown = (file) => {
+    const md = require('markdown').markdown;
+    const contentString = file.content.toString(); // Convert to string
+    const tokens = md.parse(contentString);
+
+    console.log(tokens)
+  
+    let title = "";
+    let subtitle = "";
+    let image = "";
+    let content = "";
+  
+    for (let i = 0; i < tokens.length; i++) {
+      const token = tokens[i];
+  
+      if (token[0] === "header" && token[1].level === 1) {
+        title = token[2][0];
+      } else if (token[0] === "header" && token[1].level === 2) {
+        subtitle = token[2][0];
+      } else if (token[0] === "image") {
+        image = token[1];
+      } else if (token[0] === "para" && token[1] !== "") {
+        content += token[1] + "\n";
+      }
+    }
+  
+    return {
+      title,
+      subtitle,
+      image,
+      content,
+    };
+  };
+  
 
   return (
     <>
