@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./QuickAccess.css";
 import Card from "@site/src/components/QuickAccess/QuickAccessCard";
-import markdown from "markdown";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,7 +19,9 @@ const Index = () => {
   useEffect(() => {
     // Dynamically load the markdown files
     const loadMarkdownFiles = async () => {
-      const markdownFiles = await importAll(require.context("/docs", true, /\.md$/));
+      const markdownFiles = await importAll(
+        require.context("/docs", true, /\.md$/)
+      );
 
       const processedCards = await Promise.all(
         markdownFiles.map((file) => processMarkdown(file))
@@ -36,26 +37,26 @@ const Index = () => {
     const keys = context.keys();
     const files = keys.map(context);
     const nestedFiles = files.reduce((acc, file, index) => {
-      const pathParts = keys[index].split('/');
+      const pathParts = keys[index].split("/");
       const directory = pathParts[1];
       const filename = pathParts[pathParts.length - 1];
       const filePath = `${directory}/${filename}`;
-      
+
       return {
         ...acc,
-        [filePath]: file.default
+        [filePath]: file.default,
       };
     }, {});
 
     return Object.entries(nestedFiles).map(([path, content]) => ({
       path,
-      content
+      content,
     }));
   };
 
   const processMarkdown = (file) => {
     const md = require('markdown').markdown;
-    const contentString = file.content.toString(); // Convert to string
+    const contentString = file.content.toString();
     const tokens = md.parse(contentString);
 
     console.log(tokens)
@@ -65,18 +66,19 @@ const Index = () => {
     let image = "";
     let content = "";
   
-    for (let i = 0; i < tokens.length; i++) {
-      const token = tokens[i];
-  
-      if (token[0] === "header" && token[1].level === 1) {
-        title = token[2][0];
-      } else if (token[0] === "header" && token[1].level === 2) {
-        subtitle = token[2][0];
-      } else if (token[0] === "image") {
-        image = token[1];
-      } else if (token[0] === "para" && token[1] !== "") {
-        content += token[1] + "\n";
+    for (const token of tokens) {
+
+      if(token === "markdown"){
+        continue
       }
+
+      title = token[20][1]
+      subtitle = token[28][2][1]
+      const rawImage = token[37]
+      const srcRegex = /"src":"([^"]+)"/;
+      const match = rawImage.match(srcRegex);
+      image = match ? match[1] : null;
+      content = token[44][2][1]
     }
   
     return {
@@ -86,7 +88,6 @@ const Index = () => {
       content,
     };
   };
-  
 
   return (
     <>
@@ -103,14 +104,14 @@ const Index = () => {
       {filteredCards.length > 0 ? (
         <div className="grid-container">
           {filteredCards.map((card, index) => (
-            <a href={card.target} className="" key={card.title}>
-              <Card
-                title={card.title}
-                image={card.image}
-                description={card.content}
-                subtitle={card.subtitle}
-              />
-            </a>
+            <Card
+              className=""
+              key={card.title}
+              title={card.title}
+              image={card.image}
+              description={card.content}
+              subtitle={card.subtitle}
+            />
           ))}
         </div>
       ) : (
