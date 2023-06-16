@@ -11,10 +11,10 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary bg-[url(https://img.freepik.com/premium-photo/starfield-deep-space-science-fiction-texture-wallpaper-elements-this-image-furnished-by-nasa_112293-912.jpg)]', styles.heroBanner)}>
       <div className="container">
-        <h1 style={{ color: 'white' }} className="hero__title">{siteConfig.title}</h1>
-        <p style={{ color: 'white' }} className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 style={{ color: 'white' }} className="hero__title font-bold mb-2">{siteConfig.title}</h1>
+        <p style={{ color: 'white' }} className="hero__subtitle font-semibold">{siteConfig.tagline}</p>
       </div>
     </header>
   );
