@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-require('dotenv').config()
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -32,10 +31,6 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
-  },
-
-  customFields:{
-    'REACT_APP_LOCAL_HOST': process.env.REACT_APP_LOCAL_HOST,
   },
 
   presets: [

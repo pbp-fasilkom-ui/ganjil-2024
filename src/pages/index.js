@@ -15,7 +15,6 @@ function HomepageHeader() {
       <div className="container">
         <h1 style={{ color: 'white' }} className="hero__title font-bold mb-2">{siteConfig.title}</h1>
         <p style={{ color: 'white' }} className="hero__subtitle font-semibold">{siteConfig.tagline}</p>
-        <div>{process.env.REACT_APP_LOCAL_HOST}</div>
       </div>
     </header>
   );
