@@ -88,6 +88,7 @@ const Index = () => {
       subtitle = token[22][4][1];
       const rawImage = token[30][3];
       const srcRegex = /"src":"([^"]+)"/;
+      const match = rawImage.match(srcRegex);
       image = match ? match[1] : null;
       content = token[34][4][1];
     }
