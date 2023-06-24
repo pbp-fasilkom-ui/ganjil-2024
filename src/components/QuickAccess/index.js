@@ -3,6 +3,7 @@ import "./QuickAccess.css";
 import Card from "@site/src/components/QuickAccess/QuickAccessCard";
 
 const Index = () => {
+
   const [searchQuery, setSearchQuery] = useState("");
   const [cards, setCards] = useState([]);
 
@@ -55,11 +56,10 @@ const Index = () => {
   };
 
   const processMarkdown = (file) => {
+
     const md = require('markdown').markdown;
     const contentString = file.content.toString();
     const tokens = md.parse(contentString);
-
-    console.log(tokens)
   
     let title = "";
     let subtitle = "";
@@ -72,13 +72,24 @@ const Index = () => {
         continue
       }
 
-      title = token[20][1]
-      subtitle = token[28][2][1]
-      const rawImage = token[37]
+      // To Display Cards In Local
+
+      // title = token[20][1];
+      // subtitle = token[28][2][1];
+      // const rawImage = token[37];
+      // const srcRegex = /"src":"([^"]+)"/;
+      // const match = rawImage.match(srcRegex);
+      // image = match ? match[1] : null;
+      // content = token[44][2][1];
+
+      // To Display Cards In Deployment
+
+      title = token[18][4][1];
+      subtitle = token[22][4][1];
+      const rawImage = token[30][3];
       const srcRegex = /"src":"([^"]+)"/;
-      const match = rawImage.match(srcRegex);
       image = match ? match[1] : null;
-      content = token[44][2][1]
+      content = token[34][4][1];
     }
   
     return {
