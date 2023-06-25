@@ -65,6 +65,9 @@ const Index = () => {
     let subtitle = "";
     let image = "";
     let content = "";
+    let target = "";
+
+    console.log(tokens)
   
     for (const token of tokens) {
 
@@ -81,6 +84,8 @@ const Index = () => {
       // const match = rawImage.match(srcRegex);
       // image = match ? match[1] : null;
       // content = token[44][2][1];
+      // target = token[54][1].split(':')[1].trim();
+      
 
       // To Display Cards In Deployment
 
@@ -91,6 +96,7 @@ const Index = () => {
       const match = rawImage.match(srcRegex);
       image = match ? match[1] : null;
       content = token[34][4][1];
+      target = token[54][1].split(':')[1].trim();
     }
   
     return {
@@ -98,6 +104,7 @@ const Index = () => {
       subtitle,
       image,
       content,
+      target
     };
   };
 
@@ -123,6 +130,7 @@ const Index = () => {
               image={card.image}
               description={card.content}
               subtitle={card.subtitle}
+              target={card.target}
             />
           ))}
         </div>
