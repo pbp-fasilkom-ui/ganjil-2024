@@ -66,8 +66,6 @@ const Index = () => {
     let image = "";
     let content = "";
     let target = "";
-
-    console.log(tokens)
   
     for (const token of tokens) {
 
