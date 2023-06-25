@@ -96,7 +96,7 @@ const Index = () => {
       const match = rawImage.match(srcRegex);
       image = match ? match[1] : null;
       content = token[34][4][1];
-      target = token[54][1].split(':')[1].trim();
+      target = token[44][1].split(':')[1].trim();
     }
   
     return {
