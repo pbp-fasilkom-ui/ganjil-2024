@@ -28,7 +28,8 @@
     "util": "^0.12.5"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.4.1"
+    "@docusaurus/module-type-aliases": "2.4.1",
+    "@tailwindcss/typography": "^0.5.9"
   },
   "browserslist": {
     "production": [
