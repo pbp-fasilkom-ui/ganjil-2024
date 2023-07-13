@@ -32,3 +32,9 @@ Feel free to play around and edit this post as much you like.
 ```
 
 A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+
+
+```
+Updated At: 25/06/2023
+Path: docs/tutorial-basics/create-a-blog-post
+```

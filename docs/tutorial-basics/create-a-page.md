@@ -41,3 +41,8 @@ This is a Markdown page
 ```
 
 A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+
+```
+Updated At: 25/06/2023
+Path: docs/tutorial-basics/create-a-page
+```

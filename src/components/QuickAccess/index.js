@@ -1,71 +1,159 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./QuickAccess.css";
-import Card from '@site/src/components/QuickAccess/QuickAccessCard';
+import Card from "@site/src/components/QuickAccess/QuickAccessCard";
 
 const Index = () => {
+
   const [searchQuery, setSearchQuery] = useState("");
+  const [cards, setCards] = useState([]);
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
-
-  const cards = [
-    {
-      title: "All new debian 12",
-      subtitle: "The one and only",
-      image: "img/debian-12.jpg",
-      content: "Debian is a free and open-source operating system known for its stability and large software repository. In this comprehensive guide, we will explore the features and characteristics of Debian, guide you through the installation process, explain package management using APT, and provide tips for system administration and customization.",
-      target: "docs/tutorial-extras/manage-docs-versions"
-    },
-    {
-      title: "How to use Linux 101",
-      subtitle: "Because it's too hard",
-      image: "https://www.pengertianku.net/wp-content/uploads/2017/08/pengertian-linux.jpg",
-      content: "In this tutorial, we will cover the basics of using Linux, including navigating the file system, running commands, managing processes, and more. We will provide step-by-step instructions and explanations to help you become familiar with Linux and its command-line interface.",
-      target: "docs/intro"
-    },
-    {
-      title: "All About Docusaurus",
-      subtitle: "A Better Markdown",
-      image: "https://docusaurus.io/img/docusaurus.svg",
-      content: "Docusaurus is a documentation framework that makes it easy to build, deploy, and maintain documentation websites. In this comprehensive guide, we will dive into the features and benefits of Docusaurus, how to install and configure it, and how to create and customize your documentation using Markdown.",
-      target: "docs/category/tutorial---basics"
-    },
-    {
-      title: "Setup VirtualBox",
-      subtitle: "Because you use windows",
-      image: "https://telset.id/wp-content/uploads/2016/08/virtbox_1.jpg",
-      content: "VirtualBox is a powerful virtualization software that allows you to run multiple operating systems on your Windows machine. This tutorial will walk you through the process of setting up VirtualBox, creating virtual machines, installing guest operating systems, and managing your virtual environment.",
-      target: "docs/tutorial-basics/create-a-page"
-    },
-    {
-      title: "Setup Putty",
-      subtitle: "Since you can't copy paste in Unix",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PuTTY_Icon_upstream.svg/1200px-PuTTY_Icon_upstream.svg.png",
-      content: "PuTTY is a popular SSH and Telnet client for Windows that provides a secure way to connect to remote servers and devices. In this tutorial, we will guide you through the installation and configuration of PuTTY, explain how to establish SSH connections, and demonstrate useful features like session management and key authentication.",
-      target: "docs/tutorial-basics/create-a-document"
-    },
-    {
-      title: "Bash 101",
-      subtitle: "As if there aren't 50 Billion Tutorials Already",
-      image: "https://www.codelivly.com/wp-content/uploads/2023/02/Que-es-Bash-Script.jpg",
-      content: "Bash is a powerful scripting language commonly used in Unix-based systems. This tutorial aims to provide a beginner-friendly introduction to Bash scripting, covering the basics of variables, conditionals, loops, functions, and more. By the end, you'll have a solid foundation in writing and executing Bash scripts.",
-      target: "docs/category/tutorial---extras"
-    },
-    {
-      title: "All About Debian",
-      subtitle: "It's an OS...",
-      image: "https://www.debian.org/Pics/debian-logo-1024x576.png",
-      content: "Debian is a free and open-source operating system known for its stability and large software repository. In this comprehensive guide, we will explore the features and characteristics of Debian, guide you through the installation process, explain package management using APT, and provide tips for system administration and customization.",
-      target: "docs/tutorial-extras/manage-docs-versions"
-    }
-  ];
 
   const filteredCards = searchQuery
     ? cards.filter((card) =>
         card.title.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : cards;
+
+  useEffect(() => {
+    // Dynamically load the markdown files
+    const loadMarkdownFiles = async () => {
+      const markdownFiles = await importAll(
+        require.context("/docs", true, /\.md$/)
+      );
+
+      const processedCards = await Promise.all(
+        markdownFiles.map((file) => processMarkdown(file))
+      );
+
+      setCards(processedCards);
+    };
+
+    loadMarkdownFiles();
+  }, []);
+
+  const importAll = (context) => {
+    const keys = context.keys();
+    const files = keys.map(context);
+    const nestedFiles = files.reduce((acc, file, index) => {
+      const pathParts = keys[index].split("/");
+      const directory = pathParts[1];
+      const filename = pathParts[pathParts.length - 1];
+      const filePath = `${directory}/${filename}`;
+
+      return {
+        ...acc,
+        [filePath]: file.default,
+      };
+    }, {});
+
+    return Object.entries(nestedFiles).map(([path, content]) => ({
+      path,
+      content,
+    }));
+  };
+
+  function findTargetValue(arr, searchString) {
+    for (let i = arr.length - 1; i >= 0; i--) {
+      const innerArr = arr[i];
+      const innerString = innerArr[1];
+      
+      if (innerString.includes(searchString)) {
+        const target = innerString.split(':')[1].trim();
+        return target;
+      }
+    }
+    
+    return null;
+  }
+
+  const processMarkdown = (file) => {
+
+    const md = require('markdown').markdown;
+    const contentString = file.content.toString();
+    const tokens = md.parse(contentString);
+
+    console.log(tokens)
+  
+    let title = "";
+    let subtitle = "";
+    let image = "";
+    let content = "";
+    let target = "";
+  
+    const getTitleSubtitle = () => {
+      const titleRegex = /"h1",[^`]+`([^`]+)`/;
+      const titleMatch = contentString.match(titleRegex);
+
+      if (titleMatch) {
+        title = titleMatch[1];
+      }
+
+      const subtitleRegex = /"h2",[^`]+`([^`]+)`/;
+      const subtitleMatch = contentString.match(subtitleRegex);
+
+      if (subtitleMatch) {
+        subtitle = subtitleMatch[1];
+      }
+    };
+  
+    const getImageContent = () => {
+      const srcRegex = /fallback=([^&)]+)"/;
+      const cjsRegex = /cjs\.js!\.\/(.+)/;
+
+      const srcMatch = contentString.match(srcRegex);
+
+      if (srcMatch) {
+        const finalMatch = srcMatch[1].match(cjsRegex)
+        image = '@site/'+finalMatch[1];
+      }
+
+      const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
+      const contentMatch = contentString.match(contentRegex);
+
+      if (contentMatch) {
+        content = contentMatch[1];
+      }
+    };
+
+    const getTarget = () => {
+      const targetRegex = /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+)`/;
+      const targetMatch = contentString.match(targetRegex);
+
+      if (targetMatch) {
+        target = targetMatch[1].trim();
+      }
+    };
+    
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const token = tokens[i];
+  
+      if (token === "markdown") {
+        continue;
+      }
+  
+      if (Array.isArray(token)) {
+        getTarget();
+        getTitleSubtitle();
+        getImageContent();
+      }
+  
+      // If we have found the target, there's no need to continue looping
+      if (target) break;
+    }
+    console.log(contentString)
+    console.log("image for, ", title, image)
+  
+    return {
+      title,
+      subtitle,
+      image,
+      content,
+      target
+    };
+  };
 
   return (
     <>
@@ -79,14 +167,29 @@ const Index = () => {
           className="search-input"
         />
       </div>
-      <div className="grid-container">
-        
-        {filteredCards.map((card, index) => (
-          <a href={card.target} className="" key={card.title}>
-            <Card title={card.title} image={card.image} description={card.content} subtitle={card.subtitle} />
-          </a>
-        ))}
-      </div>
+      {filteredCards.length > 0 ? (
+        <div className="grid-container">
+          {filteredCards.map((card, index) => (
+            <Card
+              className=""
+              key={card.title}
+              title={card.title}
+              image={card.image}
+              description={card.content}
+              subtitle={card.subtitle}
+              target={card.target}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="flex justify-center">
+          <img
+            src="https://www.backblaze.com/blog/wp-content/uploads/2019/12/Incomplete-archives.jpg"
+            alt="meme"
+            className="w-full sm:w-1/2"
+          />
+        </div>
+      )}
     </>
   );
 };

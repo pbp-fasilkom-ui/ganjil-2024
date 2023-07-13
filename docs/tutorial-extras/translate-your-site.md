@@ -86,3 +86,8 @@ Or build your site to include all the locales at once:
 ```bash
 npm run build
 ```
+
+```
+Updated At: 25/06/2023
+Path:docs/tutorial-extras/translate-your-site.md
+```

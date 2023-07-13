@@ -1,5 +1,5 @@
 {
-  "name": "docubase",
+  "name": "doit",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,13 +17,19 @@
     "@docusaurus/core": "2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
     "@mdx-js/react": "^1.6.22",
+    "autoprefixer": "^10.4.14",
     "clsx": "^1.2.1",
+    "markdown": "^0.5.0",
+    "postcss": "^8.4.24",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.3.2",
+    "util": "^0.12.5"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.4.1"
+    "@docusaurus/module-type-aliases": "2.4.1",
+    "@tailwindcss/typography": "^0.5.9"
   },
   "browserslist": {
     "production": [

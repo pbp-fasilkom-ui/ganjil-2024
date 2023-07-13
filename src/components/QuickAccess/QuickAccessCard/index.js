@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./card.css";
 
 const Index = ({
   title = "Title",
@@ -14,25 +13,36 @@ const Index = ({
   const handleMouseOut = () => setIsHovered(false);
 
   return (
-    <a href={target} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-      <div className="card">
-        <div
-          className={
-            isHovered ? "cardImageContainerHover" : "cardImageContainer"
-          }
-        >
-          <img src={image} className="cardImage" />
+    <a
+      href={target}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      className="text-black no-underline"
+    >
+      <span>iamge: {image}</span>
+      <div className="flex flex-col h-96 w-full max-w-64 bg-gray-200 text-black rounded-xl overflow-hidden transition duration-200 ease-in-out transform hover:scale-105">
+        <div className={isHovered ? "h-0 hidden" : "h-2/4 flex"}>
+          { image &&
+          <img src={require('@site/static/img/debian-12.jpg').default} className="object-cover w-full h-auto" alt="Card Image" />
+}
         </div>
-        <div className="cardContent">
-          <h3>{title}</h3>
-          <span className="subtitle">{subtitle}</span>
-            <p className={isHovered ? "descriptionVisible" : "descriptionHidden"}>
-              {description}
-            </p>
+          
+        <div className="flex flex-col gap-1 p-4">
+          <h3 className="font-semibold text-xl">{title}</h3>
+          <span className="italic">{subtitle}</span>
+          <p
+            className={
+              isHovered
+                ? "text-ellipsis overflow-clip h-full line-clamp-6 break-words"
+                : "hidden"
+            }
+          >
+            {description}
+          </p>
         </div>
       </div>
     </a>
-  );
+  );  
 };
 
 export default Index;

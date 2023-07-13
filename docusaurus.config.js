@@ -9,6 +9,7 @@ const config = {
   title: 'Docubase',
   tagline: 'May The fork() Be With You',
   favicon: 'img/logo.jpg',
+  staticDirectories: ['assets', 'static'],
 
   // Set the production url of your site here
   url: 'https://cbk2000.github.io',
@@ -140,6 +141,19 @@ const config = {
         respectPrefersColorScheme: false,
       },
     }),
+    plugins: [
+      async function myPlugin(context, options) {
+        return {
+          name: "docusaurus-tailwindcss",
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require("tailwindcss"));
+            postcssOptions.plugins.push(require("autoprefixer"));
+            return postcssOptions;
+          },
+        };
+      },
+    ],
 };
 
 module.exports = config;
