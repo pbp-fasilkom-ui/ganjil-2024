@@ -12,6 +12,8 @@ Documents are **groups of pages** connected through:
 
 ## Create your first Doc
 
+![kafka](../../static/img/kafka.webp)
+
 Create a Markdown file at `docs/hello.md`:
 
 ```md title="docs/hello.md"

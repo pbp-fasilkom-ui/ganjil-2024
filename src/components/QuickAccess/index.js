@@ -74,8 +74,6 @@ const Index = () => {
     const md = require('markdown').markdown;
     const contentString = file.content.toString();
     const tokens = md.parse(contentString);
-
-    console.log(tokens)
   
     let title = "";
     let subtitle = "";
@@ -100,22 +98,33 @@ const Index = () => {
     };
   
     const getImageContent = () => {
-      const srcRegex = /fallback=([^&)]+)"/;
-      const cjsRegex = /cjs\.js!\.\/(.+)/;
-
-      const srcMatch = contentString.match(srcRegex);
-
-      if (srcMatch) {
-        const finalMatch = srcMatch[1].match(cjsRegex)
-        image = '@site/'+finalMatch[1];
-      }
-
-      const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
-      const contentMatch = contentString.match(contentRegex);
-
-      if (contentMatch) {
-        content = contentMatch[1];
-      }
+        const srcRegex = /fallback=([^&)]+)"/;
+        const cjsRegex = /cjs\.js!\.\/(.+)/;
+        const remoteRegex = /img",{parentName:"p","src":"([^"]*)"/;
+      
+        const srcMatch = contentString.match(srcRegex);
+        const remoteMatch = contentString.match(remoteRegex);
+      
+        if (srcMatch) {
+          const finalMatch = srcMatch[1].match(cjsRegex)
+          if (finalMatch) {
+            image = finalMatch[1];
+            image = image.replace('static/', '');
+          }
+        }
+      
+        // If it's a remote image, assign it directly
+        if (remoteMatch) {
+          image = remoteMatch[1];
+        }
+      
+        const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
+        const contentMatch = contentString.match(contentRegex);
+      
+        if (contentMatch) {
+          content = contentMatch[1];
+        }
+      
     };
 
     const getTarget = () => {
@@ -143,8 +152,6 @@ const Index = () => {
       // If we have found the target, there's no need to continue looping
       if (target) break;
     }
-    console.log(contentString)
-    console.log("image for, ", title, image)
   
     return {
       title,

@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Create a Page
+![akua](https://is3.cloudhost.id/francis/kuliah/adprog/nicetry/profile/akua.png)
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
