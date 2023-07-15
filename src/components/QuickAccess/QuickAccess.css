@@ -43,6 +43,8 @@
 
 .card_title {
   font-weight: bold;
+  color: #131313;
+  line-height: 15px;
 }
 
 .card_content {
@@ -69,11 +71,6 @@
   transform: rotate(-175deg);
   border-radius: 50%;
   box-shadow: inset 48px 48px #f2f2f2;
-}
-
-.card_title {
-  color: #131313;
-  line-height: 15px;
 }
 
 .card_subtitle {

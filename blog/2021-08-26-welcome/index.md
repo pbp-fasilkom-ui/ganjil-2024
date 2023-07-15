@@ -1,25 +1,14 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: Hallo!
+authors: [cbkadal, jwalker]
+tags: [This, Is, The, Way, '!']
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+“This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.
 
-Simply add Markdown files (or folders) to the `blog` directory.
+Therefore, this is NOT about the BEST PRACTICE to do something! No animals were harmed while creating these pages. No original ideas were used on these pages. Most ideas were shamelessly stolen from “Here, There, and Everywhere”, including but not limited to “bootstrap,” “GitHub Page Themes,” “Mike Dane,” “stack overflow,” “w3schools,” et al.
 
-Regular blog authors can be added to `authors.yml`.
+This site was developed on GitHub and is deployed on GitHub Page. Unfortunately, it is NOT “mobile-friendly” (yet). If you like it, you can do whatever you want: clone it, fork it, copy it, or even ignore it! The source code is available at GitHub.com or it can be downloaded here.
 
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jEoM3qan9Gs" frameborder="0" allowfullscreen></iframe>

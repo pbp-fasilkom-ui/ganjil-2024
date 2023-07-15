@@ -71,8 +71,6 @@ module.exports = {
 
 The locale dropdown now appears in your navbar:
 
-![Locale Dropdown](./img/localeDropdown.png)
-
 ## Build your localized site
 
 Build your site for a specific locale:
@@ -89,5 +87,5 @@ npm run build
 
 ```
 Updated At: 25/06/2023
-Path:docs/tutorial-extras/translate-your-site.md
+Path:docs/tutorial-extras/translate-your-site
 ```

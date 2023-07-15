@@ -57,7 +57,7 @@ const Index = ({
         </div>
       </div>
     </a>
-  );
+  );  
 };
 
 export default Index;
