@@ -34,9 +34,9 @@ const Index = ({
       <div className="flex flex-col h-96 w-full max-w-64 bg-gray-200 text-black rounded-xl overflow-hidden transition duration-200 ease-in-out transform hover:scale-105" >
         <div className={isHovered ? "h-0 hidden" : "h-2/4 flex"}>
           <img
-            src={image && (image.startsWith("img")||image.startsWith("http")) ? image : "img/default_card_image.webp"}
+            src={image && (image.startsWith("/docubase")||image.startsWith("http")) ? image : "img/default_card_image.webp"}
             className={`object-cover w-full h-auto ${
-              image && (image.startsWith("img")||image.startsWith("http"))? "" : "filter grayscale blur-md"
+              image && (image.startsWith("/docubase")||image.startsWith("http"))? "" : "filter grayscale blur-md"
             }`}
             alt="Card Image"
           />
