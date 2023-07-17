@@ -2,7 +2,7 @@
 slug: welcome
 title: Hallo!
 authors: [cbkadal, jwalker]
-tags: [This, Is, The, Way, '!']
+tags: [This, Is, The, Way]
 ---
 
 “This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.

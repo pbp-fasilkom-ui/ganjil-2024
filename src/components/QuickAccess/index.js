@@ -3,7 +3,6 @@ import "./QuickAccess.css";
 import Card from "@site/src/components/QuickAccess/QuickAccessCard";
 
 const Index = () => {
-
   const [searchQuery, setSearchQuery] = useState("");
   const [cards, setCards] = useState([]);
 
@@ -59,67 +58,105 @@ const Index = () => {
     for (let i = arr.length - 1; i >= 0; i--) {
       const innerArr = arr[i];
       const innerString = innerArr[1];
-      
+
       if (innerString.includes(searchString)) {
-        const target = innerString.split(':')[1].trim();
+        const target = innerString.split(":")[1].trim();
         return target;
       }
     }
-    
+
     return null;
   }
 
   const processMarkdown = (file) => {
-
-    const md = require('markdown').markdown;
+    const md = require("markdown").markdown;
     const contentString = file.content.toString();
     const tokens = md.parse(contentString);
-  
+
     let title = "";
     let subtitle = "";
     let image = "";
     let content = "";
     let target = "";
-  
-    for (const token of tokens) {
 
-      if(token === "markdown"){
-        continue
+    const getTitleSubtitle = () => {
+      const titleRegex = /"h1",[^`]+`([^`]+)`/;
+      const titleMatch = contentString.match(titleRegex);
+
+      if (titleMatch) {
+        title = titleMatch[1];
       }
 
-      // To Display Cards In Local
+      const subtitleRegex = /"h2",[^`]+`([^`]+)`/;
+      const subtitleMatch = contentString.match(subtitleRegex);
 
-      // title = token[20][1];
-      // subtitle = token[28][2][1];
-      // const rawImage = token[37];
-      // const srcRegex = /"src":"([^"]+)"/;
-      // const match = rawImage.match(srcRegex);
-      // image = match ? match[1] : null;
-      // content = token[44][2][1];
-      // target = token[54][1].split(':')[1].trim();
-      // const searchString = 'Path:';
-      // target = findTargetValue(token, searchString) || "docubase/";
-      
+      if (subtitleMatch) {
+        subtitle = subtitleMatch[1];
+      }
+    };
 
-      // To Display Cards In Deployment
+    const getImageContent = () => {
+      const srcRegex = /fallback=([^&)]+)"/;
+      const cjsRegex = /cjs\.js!\.\/(.+)/;
+      const remoteRegex = /img",{parentName:"p","src":"([^"]*)"/;
 
-      title = token[18][4][1];
-      subtitle = token[22][4][1];
-      const rawImage = token[30][3];
-      const srcRegex = /"src":"([^"]+)"/;
-      const match = rawImage.match(srcRegex);
-      image = match ? match[1] : null;
-      content = token[34][4][1];
-      const searchString = 'Path:';
-      target = findTargetValue(token, searchString) || "docubase/";
+      const srcMatch = contentString.match(srcRegex);
+      const remoteMatch = contentString.match(remoteRegex);
+
+      if (srcMatch) {
+        const finalMatch = srcMatch[1].match(cjsRegex);
+        if (finalMatch) {
+          image = finalMatch[1];
+          image = image.replace("static/", "/docubase/");
+        }
+      }
+
+      // If it's a remote image, assign it directly
+      if (remoteMatch) {
+        image = remoteMatch[1];
+      }
+
+      const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
+      const contentMatch = contentString.match(contentRegex);
+
+      if (contentMatch) {
+        content = contentMatch[1];
+      }
+    };
+
+    const getTarget = () => {
+      const targetRegex =
+        /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+)`/;
+      const targetMatch = contentString.match(targetRegex);
+
+      if (targetMatch) {
+        target = targetMatch[1].trim();
+      }
+    };
+
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const token = tokens[i];
+
+      if (token === "markdown") {
+        continue;
+      }
+
+      if (Array.isArray(token)) {
+        getTarget();
+        getTitleSubtitle();
+        getImageContent();
+      }
+
+      // If we have found the target, there's no need to continue looping
+      if (target) break;
     }
-  
+
     return {
       title,
       subtitle,
       image,
       content,
-      target
+      target,
     };
   };
 
@@ -137,17 +174,19 @@ const Index = () => {
       </div>
       {filteredCards.length > 0 ? (
         <div className="grid-container">
-          {filteredCards.map((card, index) => (
-            <Card
-              className=""
-              key={card.title}
-              title={card.title}
-              image={card.image}
-              description={card.content}
-              subtitle={card.subtitle}
-              target={card.target}
-            />
-          ))}
+          {filteredCards.map((card, index) => {
+            return (
+              <Card
+                className=""
+                key={card.title}
+                title={card.title}
+                image={card.image}
+                description={card.content}
+                subtitle={card.subtitle}
+                target={card.target}
+              />
+            );
+          })}
         </div>
       ) : (
         <div className="flex justify-center">
