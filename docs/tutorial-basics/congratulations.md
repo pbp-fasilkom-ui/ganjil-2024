@@ -2,15 +2,12 @@
 sidebar_position: 1
 ---
 
-# Congratulations!
-## You have sucessfully deployed OS-DOCU!
+# Hello There!
+## This is only the start
 
-![image](../../static/img/sui.jpg)
+![image](https://teknogram.id/wp-content/uploads/2023/06/debian-12-bookworm.jpg)
 
+Debian 12, the newest release of the unix OS Debian. Also known as the "Bookworm", creates more relevant features that follows the up to date necessity
 
-Glasses are really versatile. First, you can have glasses-wearing girls take them off and suddenly become beautiful, or have girls wearing glasses flashing those cute grins, or have girls stealing the protagonist's glasses and putting them on like, "Haha, got your glasses!' That's just way too cute! Also, boys with glasses! I really like when their glasses have that suspicious looking gleam, and it's amazing how it can look really cool or just be a joke. I really like how it can fulfill all those abstract needs. Being able to switch up the styles and colors of glasses based on your mood is a lot of fun too! It's actually so much fun! You have those half rim glasses, or the thick frame glasses, everything! It's like you're enjoying all these kinds of glasses at a buffet. I really want Luna to try some on or Marine to try some on to replace her eyepatch. We really need glasses to become a thing in hololive and start selling them for HoloComi. Don't. You. Think. We. Really. Need. To. Officially. Give. Everyone. Glasses?
-
-```
-Updated At: 25/06/2023
-Path: docs/tutorial-basics/congratulations
-```
+### Updated At: 17/06/2023
+### Path: docs/tutorial-basics/congratulations
