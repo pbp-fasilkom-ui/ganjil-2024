@@ -9,7 +9,6 @@ const config = {
   title: 'Docubase',
   tagline: 'May The fork() Be With You',
   favicon: 'img/logo.jpg',
-  staticDirectories: ['assets', 'static'],
 
   // Set the production url of your site here
   url: 'https://cbk2000.github.io',
