@@ -38,3 +38,5 @@ $ yarn start
     git config --global core.autocrlf false
     ```
 5. Make sure to make a clear commit message
+
+Last Edit: 20/07/2023
