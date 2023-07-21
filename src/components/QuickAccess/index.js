@@ -81,39 +81,72 @@ const Index = () => {
     let content = "";
     let target = "";
   
-    for (const token of tokens) {
+    const getTitleSubtitle = () => {
+      const titleRegex = /"h1",[^`]+`([^`]+)`/;
+      const titleMatch = contentString.match(titleRegex);
 
-      if(token === "markdown"){
-        continue
+      if (titleMatch) {
+        title = titleMatch[1];
+        console.log("title: " + title); 
       }
 
-      // To Display Cards In Local
+      const subtitleRegex = /"h2",[^`]+`([^`]+)`/;
+      const subtitleMatch = contentString.match(subtitleRegex);
 
-      // title = token[20][1];
-      // subtitle = token[28][2][1];
-      // const rawImage = token[37];
-      // const srcRegex = /"src":"([^"]+)"/;
-      // const match = rawImage.match(srcRegex);
-      // image = match ? match[1] : null;
-      // content = token[44][2][1];
-      // target = token[54][1].split(':')[1].trim();
-      // const searchString = 'Path:';
-      // target = findTargetValue(token, searchString) || "docubase/";
-      
+      if (subtitleMatch) {
+        subtitle = subtitleMatch[1];
+        console.log("subtitle: " + subtitle); 
+      }
+    };
 
-      // To Display Cards In Deployment
+    const getImageContent = () => {
+      const srcRegex = /\("img",\s*{\s*parentName:"p"[^}]*"src":"([^"]+)"/;
+      const srcMatch = contentString.match(srcRegex);
 
-      title = token[18][4][1];
-      subtitle = token[22][4][1];
-      const rawImage = token[30][3];
-      const srcRegex = /"src":"([^"]+)"/;
-      const match = rawImage.match(srcRegex);
-      image = match ? match[1] : null;
-      content = token[34][4][1];
-      const searchString = 'Path:';
-      target = findTargetValue(token, searchString) || "docubase/";
+      if (srcMatch) {
+        image = srcMatch[1];
+        console.log("image: " + image);
+      }
+
+      const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
+      const contentMatch = contentString.match(contentRegex);
+
+      if (contentMatch) {
+        content = contentMatch[1];
+        console.log("content: " + content);
+      }
+    };
+
+    const getTarget = () => {
+      const targetRegex = /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+)`/;
+      const targetMatch = contentString.match(targetRegex);
+
+      if (targetMatch) {
+        target = targetMatch[1].trim();
+        console.log(target);
+      }
+    };
+
+    console.log("tokens: " + tokens)
+
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const token = tokens[i];
+
+      if (token === "markdown") {
+        continue;
+      }
+
+      console.log("sampepeko")
+      if (Array.isArray(token)) {
+        getTarget();
+        getTitleSubtitle();
+        getImageContent();
+      }
+
+      // If we have found the target, there's no need to continue looping
+      if (target) break;
     }
-  
+
     return {
       title,
       subtitle,

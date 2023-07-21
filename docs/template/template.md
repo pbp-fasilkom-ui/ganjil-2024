@@ -9,5 +9,8 @@ sidebar_position: 1
 
 Content Here
 
-### Updated At: 25/06/2023
-### Path: docs/template/
+
+```
+Updated At: 25/06/2023
+Path: docs/template
+```
