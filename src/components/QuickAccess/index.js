@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./QuickAccess.css";
 import Card from "@site/src/components/QuickAccess/QuickAccessCard";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const Index = () => {
-
+  const {
+    siteConfig: { customFields, baseUrl },
+  } = useDocusaurusContext();
   const [searchQuery, setSearchQuery] = useState("");
   const [cards, setCards] = useState([]);
+
+  const environment = customFields.NODE_ENV;
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
@@ -59,67 +64,132 @@ const Index = () => {
     for (let i = arr.length - 1; i >= 0; i--) {
       const innerArr = arr[i];
       const innerString = innerArr[1];
-      
+
       if (innerString.includes(searchString)) {
-        const target = innerString.split(':')[1].trim();
+        const target = innerString.split(":")[1].trim();
         return target;
       }
     }
-    
+
     return null;
   }
 
   const processMarkdown = (file) => {
-
-    const md = require('markdown').markdown;
+    const md = require("markdown").markdown;
     const contentString = file.content.toString();
     const tokens = md.parse(contentString);
-  
+
+    console.log("contentstr:", contentString);
+
     let title = "";
     let subtitle = "";
     let image = "";
     let content = "";
     let target = "";
-  
-    for (const token of tokens) {
 
-      if(token === "markdown"){
-        continue
+    const getTitleSubtitle = () => {
+      const titleRegex = /"h1",[^`]+`([^`]+)`/;
+      const titleMatch = contentString.match(titleRegex);
+
+      if (titleMatch) {
+        title = titleMatch[1];
+        console.log("title: " + title);
       }
 
-      // To Display Cards In Local
+      const subtitleRegex = /"h2",[^`]+`([^`]+)`/;
+      const subtitleMatch = contentString.match(subtitleRegex);
 
-      // title = token[20][1];
-      // subtitle = token[28][2][1];
-      // const rawImage = token[37];
-      // const srcRegex = /"src":"([^"]+)"/;
-      // const match = rawImage.match(srcRegex);
-      // image = match ? match[1] : null;
-      // content = token[44][2][1];
-      // target = token[54][1].split(':')[1].trim();
-      // const searchString = 'Path:';
-      // target = findTargetValue(token, searchString) || "docubase/";
-      
+      if (subtitleMatch) {
+        subtitle = subtitleMatch[1];
+        console.log("subtitle: " + subtitle);
+      }
+    };
 
-      // To Display Cards In Deployment
+    const baseURL = environment === "production" ? baseUrl : baseUrl;
 
-      title = token[18][4][1];
-      subtitle = token[22][4][1];
-      const rawImage = token[30][3];
-      const srcRegex = /"src":"([^"]+)"/;
-      const match = rawImage.match(srcRegex);
-      image = match ? match[1] : null;
-      content = token[34][4][1];
-      const searchString = 'Path:';
-      target = findTargetValue(token, searchString) || "docubase/";
+    const getImageContent = () => {
+      // const remoteSrcRegex = /\("img",\s*{\s*parentName:"p"[^}]*"src":"([^"]+)"/;
+      // const localSrcRegex = /\("img",[^)]+\(__webpack_require__\([^)]+\)\/\* \["default"\] \*\/ \.Z\)/;
+      // const srcMatch = contentString.match(remoteSrcRegex) || contentString.match(localSrcRegex);
+    
+      // if (srcMatch) {
+      //   // Adjust the image path based on the environment
+      //   image = srcMatch[1].startsWith('http') ? srcMatch[1] : baseURL + srcMatch[1];
+      //   console.log("image: " + image);
+      // }
+    
+      const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
+      const contentMatch = contentString.match(contentRegex);
+    
+      if (contentMatch) {
+        content = contentMatch[1];
+        console.log("content: " + content);
+      }
+      else{
+        console.warn("image not matched!")
+      }
+    };
+    
+
+    const getTarget = () => {
+      const targetRegex =
+        /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+)`/;
+      const targetMatch = contentString.match(targetRegex);
+
+      if (targetMatch) {
+        target = targetMatch[1].trim();
+        console.log(target);
+      }
+    };
+
+    const getTargetCoverPhoto = () => {
+      const targetRegex = /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+?)(?=\n)/;
+      const targetMatch = contentString.match(targetRegex);
+    
+      const coverPhotoRegex = /CoverImage:\s*(.*)/;
+      const coverPhotoMatch = contentString.match(coverPhotoRegex);
+    
+      if (targetMatch) {
+        target = targetMatch[1].trim();
+        console.log("target cover pgoto:>",target,"<");
+      }
+    
+      if (coverPhotoMatch) {
+        let coverPhoto = coverPhotoMatch[1].trim();
+        // Adjust the image path based on the environment only for local files
+        image = coverPhoto.startsWith('http') ? coverPhoto : baseURL + coverPhoto;
+        console.log("Cover photo: " + image);
+      } else {
+        console.log("coverimage not matched")
+      }
+    };
+    
+
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const token = tokens[i];
+
+      if (token === "markdown") {
+        continue;
+      }
+
+      console.log("sampepeko");
+      if (Array.isArray(token)) {
+        getTarget();
+        getTitleSubtitle();
+        getImageContent();
+        getTargetCoverPhoto();
+      }
+
+      // If we have found the target, there's no need to continue looping
+      if (target) break;
     }
-  
+
     return {
       title,
       subtitle,
       image,
       content,
-      target
+      target,
     };
   };
 
