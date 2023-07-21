@@ -5,7 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const Index = () => {
   const {
-    siteConfig: { customFields },
+    siteConfig: { customFields, baseUrl },
   } = useDocusaurusContext();
   const [searchQuery, setSearchQuery] = useState("");
   const [cards, setCards] = useState([]);
@@ -105,7 +105,7 @@ const Index = () => {
       }
     };
 
-    const baseURL = environment === "production" ? "/" : "/static/";
+    const baseURL = environment === "production" ? baseUrl : baseUrl;
 
     const getImageContent = () => {
       // const remoteSrcRegex = /\("img",\s*{\s*parentName:"p"[^}]*"src":"([^"]+)"/;
