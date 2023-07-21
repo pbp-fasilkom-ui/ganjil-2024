@@ -32,7 +32,9 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  customFields: {
+    NODE_ENV: process.env.NODE_ENV
+  },
   presets: [
     [
       'classic',
