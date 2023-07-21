@@ -143,7 +143,7 @@ const Index = () => {
     };
 
     const getTargetCoverPhoto = () => {
-      const targetRegex = /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+)`/;
+      const targetRegex = /"code",\s*\{parentName:"pre"\},\s*`[^`]*Path:\s*([^`]+?)(?=\n)/;
       const targetMatch = contentString.match(targetRegex);
     
       const coverPhotoRegex = /CoverImage:\s*(.*)/;
