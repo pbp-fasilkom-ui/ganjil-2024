@@ -1,6 +1,9 @@
+---
+sidebar_position: 2
+---
 # Debian Guest Preparation
 
-## Installing Debian Gnu/Linux
+## Prepare VirtualBox for Debian Guest
 
 :::note
 
