@@ -76,7 +76,7 @@ make distclean; make mrproper; make clean;
   you might create a massive kernel with huge modules.
   * Consider copying a working `.config` file from the `/boot/` directory.
   * Or, try to [download this ".config" file](assets/configs/config-linux-kernel-arm64.txt)
-    * See also [Linux/ARM64 Kernel Config for UTM](010.md).
+    * See also [Linux/ARM64 Kernel Config for UTM](linux-arm64-config).
   * Or, try to reuse any `.config` file
 :::
 
