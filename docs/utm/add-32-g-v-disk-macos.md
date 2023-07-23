@@ -106,5 +106,5 @@ root:~#
 ```
 
 ```
-Path: docs/utm/add-32-g-v-disk
+Path: docs/utm/add-32-g-v-disk-macos
 ```

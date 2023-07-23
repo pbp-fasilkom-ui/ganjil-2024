@@ -182,5 +182,5 @@ ls -a
 ```
 
 ```
-Path: docs/utm/compile-linux-kernel
+Path: docs/utm/compile-linux-kernel-macos
 ```
