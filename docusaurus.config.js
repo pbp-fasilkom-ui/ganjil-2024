@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docubase',
+  title: 'Doit-Revamp',
   tagline: 'May The fork() Be With You',
   favicon: 'img/logo.jpg',
 
@@ -67,7 +67,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.jpg',
       navbar: {
-        title: 'Docubase',
+        title: 'Doit',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.jpg',
@@ -81,7 +81,7 @@ const config = {
           },
           {to: '/blog/welcome', label: 'Kambing-Blog', position: 'left'},
           {
-            href: 'https://github.com/cbk2000/docubase',
+            href: 'https://github.com/cbk2000/doit-revamp',
             label: 'GitHub',
             position: 'right',
           },
