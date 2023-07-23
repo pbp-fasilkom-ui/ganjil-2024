@@ -1,0 +1,8 @@
+{
+  "label": "UTM MacOS Silicon",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorials on how to Install Virtual Box on Apple Mac Silicon (UTM/qemu)"
+  }
+}
