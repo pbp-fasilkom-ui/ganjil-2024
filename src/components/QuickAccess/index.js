@@ -60,24 +60,10 @@ const Index = () => {
     }));
   };
 
-  function findTargetValue(arr, searchString) {
-    for (let i = arr.length - 1; i >= 0; i--) {
-      const innerArr = arr[i];
-      const innerString = innerArr[1];
-
-      if (innerString.includes(searchString)) {
-        const target = innerString.split(":")[1].trim();
-        return target;
-      }
-    }
-
-    return null;
-  }
 
   const processMarkdown = (file) => {
-    const md = require("markdown").markdown;
     const contentString = file.content.toString();
-    const tokens = md.parse(contentString);
+    console.log(contentString)
 
     console.log("contentstr:", contentString);
 
@@ -108,16 +94,6 @@ const Index = () => {
     const baseURL = environment === "production" ? baseUrl : baseUrl;
 
     const getImageContent = () => {
-      // const remoteSrcRegex = /\("img",\s*{\s*parentName:"p"[^}]*"src":"([^"]+)"/;
-      // const localSrcRegex = /\("img",[^)]+\(__webpack_require__\([^)]+\)\/\* \["default"\] \*\/ \.Z\)/;
-      // const srcMatch = contentString.match(remoteSrcRegex) || contentString.match(localSrcRegex);
-    
-      // if (srcMatch) {
-      //   // Adjust the image path based on the environment
-      //   image = srcMatch[1].startsWith('http') ? srcMatch[1] : baseURL + srcMatch[1];
-      //   console.log("image: " + image);
-      // }
-    
       const contentRegex = /"p",\s*null,\s*`([^`]+)`/;
       const contentMatch = contentString.match(contentRegex);
     
@@ -164,25 +140,10 @@ const Index = () => {
       }
     };
     
-
-    for (let i = tokens.length - 1; i >= 0; i--) {
-      const token = tokens[i];
-
-      if (token === "markdown") {
-        continue;
-      }
-
-      console.log("sampepeko");
-      if (Array.isArray(token)) {
-        getTarget();
-        getTitleSubtitle();
-        getImageContent();
-        getTargetCoverPhoto();
-      }
-
-      // If we have found the target, there's no need to continue looping
-      if (target) break;
-    }
+    getTarget();
+    getTitleSubtitle();
+    getImageContent();
+    getTargetCoverPhoto();
 
     return {
       title,
