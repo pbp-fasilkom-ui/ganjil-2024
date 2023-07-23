@@ -14,12 +14,12 @@ const config = {
   url: 'https://cbk2000.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docubase',
+  baseUrl: '/doit-revamp',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'cbk2000', // Usually your GitHub org/user name.
-  projectName: 'docubase', // Usually your repo name.
+  projectName: 'doit-revamp', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
