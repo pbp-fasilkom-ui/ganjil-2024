@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 # SCP
+## Secure Copy Protocol
 
 ## scp (1)
 
