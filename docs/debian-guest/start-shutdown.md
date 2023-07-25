@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Start, Shutdown, Login, and Logout
 
 ## Debian Start (Boot)

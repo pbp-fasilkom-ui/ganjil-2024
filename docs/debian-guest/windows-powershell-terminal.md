@@ -1,8 +1,5 @@
 ---
-title:  Windows PowerShell and Terminal
-description:
-  How to install Windows PowerShell and Windows Terminal
-tagline: Windows, PowerShell, Terminal
+sidebar_position: 1
 ---
 # Windows Powershell and Terminal
 
