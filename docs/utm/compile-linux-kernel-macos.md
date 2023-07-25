@@ -75,7 +75,7 @@ make distclean; make mrproper; make clean;
 * If copying a **wrong** `.config` file,
   you might create a massive kernel with huge modules.
   * Consider copying a working `.config` file from the `/boot/` directory.
-  * Or, try to [download this ".config" file](assets/configs/config-linux-kernel-arm64.txt)
+  * Or, try to <a href="/doit-revamp/configs/config-linux-kernel-arm64.txt" target="_blank">download this ".config" file</a>
     * See also [Linux/ARM64 Kernel Config for UTM](linux-arm64-config).
   * Or, try to reuse any `.config` file
 :::

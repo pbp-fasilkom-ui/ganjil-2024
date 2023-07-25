@@ -68,7 +68,7 @@ make distclean; make mrproper; make clean;
 :::caution
 If you copied a **wrong** `.config` file, you might create a massive kernel with huge modules.
 * Consider copying a working `.config` file from the `/boot` directory.
-* Or, try to <a href="../../configs/config-linux-kernel-amd64.txt">download this ".config" file</a>
+* Or, try to <a href="/doit-revamp/configs/config-linux-kernel-amd64.txt" target="_blank">download this ".config" file</a>
 *  See also [`Linux/AMD64 Kernel Config for VirtualBox`](linux-amd64-config).
 * Or, try to reuse any .config file. * Run:
 
