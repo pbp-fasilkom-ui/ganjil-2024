@@ -26,7 +26,7 @@ const Index = () => {
     // Dynamically load the markdown files
     const loadMarkdownFiles = async () => {
       const markdownFiles = await importAll(
-        require.context("/docs", true, /\.md$/)
+        require.context("/docs", true, /\.md|\.mdx$/)
       );
 
       const processedCards = await Promise.all(
@@ -63,9 +63,6 @@ const Index = () => {
 
   const processMarkdown = (file) => {
     const contentString = file.content.toString();
-    console.log(contentString)
-
-    console.log("contentstr:", contentString);
 
     let title = "";
     let subtitle = "";
@@ -79,7 +76,6 @@ const Index = () => {
 
       if (titleMatch) {
         title = titleMatch[1];
-        console.log("title: " + title);
       }
 
       const subtitleRegex = /"h2",[^`]+`([^`]+)`/;
@@ -87,7 +83,6 @@ const Index = () => {
 
       if (subtitleMatch) {
         subtitle = subtitleMatch[1];
-        console.log("subtitle: " + subtitle);
       }
     };
 
@@ -99,10 +94,6 @@ const Index = () => {
     
       if (contentMatch) {
         content = contentMatch[1];
-        console.log("content: " + content);
-      }
-      else{
-        console.warn("image not matched!")
       }
     };
     
@@ -114,7 +105,6 @@ const Index = () => {
 
       if (targetMatch) {
         target = targetMatch[1].trim();
-        console.log(target);
       }
     };
 
@@ -127,16 +117,12 @@ const Index = () => {
     
       if (targetMatch) {
         target = targetMatch[1].trim();
-        console.log("target cover pgoto:>",target,"<");
       }
     
       if (coverPhotoMatch) {
         let coverPhoto = coverPhotoMatch[1].trim();
         // Adjust the image path based on the environment only for local files
         image = coverPhoto.startsWith('http') ? coverPhoto : baseURL + coverPhoto;
-        console.log("Cover photo: " + image);
-      } else {
-        console.log("coverimage not matched")
       }
     };
     
