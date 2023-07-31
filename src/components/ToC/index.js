@@ -3,26 +3,27 @@ import React, { useState } from 'react';
 const index = () => {
   const initialItems = [
     {
-      title: 'Title Here',
-      path: '/template',
+      title: 'Virtual Box',
+      path: 'category/virtual-box',
       subCategories: [
-        { title: 'idk 1', path: '/template/subcategory-1' },
-        { title: 'Subcategory 2', path: '/template/subcategory-2' },
+        { title: 'Installing VirtualBox on Windows with Debian ISO', path: 'virtualbox/installing-vbox-on-windows' },
+        { title: 'Debian Guest Preparation', path: 'virtualbox/debian-guest-preparation' },
+        { title: 'Debian Guest Installation', path: 'virtualbox/debian-guest-installation' },
+        { title: 'VirtualBox: Adding A 32 GB VirtualDisk', path: 'virtualbox/add-32-g-v-disk' },
+        { title: 'VirtualBox: How to compile Linux Kernel on a Debian Guest', path: 'virtualbox/compile-linux-kernel' },
+        { title: 'VirtualBox: Linux/AMD64 6.4 Kernel Configuration', path: 'virtualbox/linux-amd64-config' }
       ],
     },
     {
-      title: 'Chapter 1',
-      path: '/chapter-1',
+      title: 'UTM MacOS Silicon',
+      path: 'category/utm-macos-silicon',
       subCategories: [
-        { title: 'Subcategory 1', path: '/chapter-1/subcategory-1' },
-        { title: 'what 2', path: '/chapter-1/subcategory-2' },
+        { title: 'UTM MacOS Silicon: Installing Debian Gnu/Linux', path: 'utm/debian-installation-macos' },
+        { title: 'UTM MacOS Silicon: Adding A 32 GB VirtualDisk', path: 'utm/add-32-g-v-disk-macos' },
+        { title: 'UTM MacOS Silicon: How to compile Linux Kernel on a Debian Guest', path: 'utm/compile-linux-kernel-macos' },
+        { title: 'UTM MacOS M1: Linux/ARM64 6.3 Kernel Configuration', path: 'utm/linux-arm64-config' },
       ],
-    },
-    {
-      title: 'Chapter 2',
-      path: '/chapter-2',
-      subCategories: [],
-    },
+    }
   ];
 
   const [searchTerm, setSearchTerm] = useState('');
