@@ -23,6 +23,31 @@ const index = () => {
         { title: 'UTM MacOS Silicon: How to compile Linux Kernel on a Debian Guest', path: 'utm/compile-linux-kernel-macos' },
         { title: 'UTM MacOS M1: Linux/ARM64 6.3 Kernel Configuration', path: 'utm/linux-arm64-config' },
       ],
+    },
+    {
+      title: 'Debian Guest',
+      path: 'category/debian-guest',
+      subCategories: [
+        { title: 'Windows Powershell and Terminal', path: 'debian-guest/windows-powershell-terminal' },
+        { title: 'Start, Shutdown, Login, and Logout', path: 'debian-guest/start-shutdown' },
+        { title: 'SCP', path: 'debian-guest/scp' },
+        { title: 'Root (SuperUser)', path: 'debian-guest/root' },
+        { title: 'Sources list', path: 'debian-guest/sources-list' },
+        { title: 'Installing Debian Packages', path: 'debian-guest/debian-packages-1' },
+        { title: 'Add User', path: 'debian-guest/adduser' },
+        { title: 'Hostname', path: 'debian-guest/hostname' },
+        { title: 'User .vimrc and .bash_aliases', path: 'debian-guest/vimrc-and-bashalias-user' },
+        { title: 'Root .vimrc and .profile', path: 'debian-guest/vimrc-and-bashalias-root' },
+        { title: 'ETC Linux', path: 'debian-guest/etc-linux' }
+      ],
+    },
+    {
+      title: 'Misc',
+      path: 'category/misc',
+      subCategories: [
+        { title: 'Google Drive from MacOS and Windows', path: 'misc/google-drive-from-mac-and-windows' },
+        { title: 'TBA', path: 'misc/tba' }
+      ],
     }
   ];
 
