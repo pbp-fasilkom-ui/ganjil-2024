@@ -100,4 +100,5 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V
 
 ```
 Path: docs/virtualbox/installing-vbox-on-windows
+CoverImage: img/debian-12.jpg
 ```
