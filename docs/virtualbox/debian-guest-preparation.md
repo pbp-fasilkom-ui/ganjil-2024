@@ -31,7 +31,7 @@ You might select other options based on your faith and religion *(i.e., kepercay
 
 Sh*t sometimes happens!
 
-![debVBOX-009](//img/legacy/debVBOX-009.jpg)
+![debVBOX-009](../../static/img/legacy/debVBOX-009.jpg)
 :::
 
 ## Select: `New`
@@ -43,7 +43,7 @@ Sh*t sometimes happens!
 
 :::
 
-![debVBOX-010](//img/legacy/debVBOX-010.jpg)
+![debVBOX-010](../../static/img/legacy/debVBOX-010.jpg)
 
 
 ### Virtual Machine Name and Operating Systems
@@ -57,7 +57,7 @@ Sh*t sometimes happens!
 
 * Select: `Expert Mode`
 
-![debVBOX-011](//img/legacy/debVBOX-011.jpg)
+![debVBOX-011](../../static/img/legacy/debVBOX-011.jpg)
 
 
 | Field | Param |
@@ -66,7 +66,7 @@ Sh*t sometimes happens!
 | Type | `Linux`|
 | Version | `Debian (64 bit)` |
 
-![debVBOX-012](//img/legacy/debVBOX-012.jpg)
+![debVBOX-012](../../static/img/legacy/debVBOX-012.jpg)
 
 
 ### Hardware
@@ -90,7 +90,7 @@ Make sure that you don't cross the red line!
 :::
 
 
-![debVBOX-013](//img/legacy/debVBOX-013.jpg)
+![debVBOX-013](../../static/img/legacy/debVBOX-013.jpg)
 
 
 ### Hard Disk
@@ -103,7 +103,7 @@ Do not worry about having a 24 GB empty disk! An empty disk does not occupy much
 | > Type | `VDI`|
 
 
-![debVBOX-014](//img/legacy/debVBOX-014.jpg)
+![debVBOX-014](../../static/img/legacy/debVBOX-014.jpg)
 
 
 ## Export OVA: `DEB00-0`
@@ -112,22 +112,22 @@ Do not worry about having a 24 GB empty disk! An empty disk does not occupy much
   * `Tools` -> `Export`
   * FINISH
 
-![debVBOX-015](//img/legacy/debVBOX-015.jpg)
+![debVBOX-015](../../static/img/legacy/debVBOX-015.jpg)
 
 
 ## Rename `DEB00-0` to `DEB00-1`
 
-![debVBOX-016](//img/legacy/debVBOX-016.jpg)
+![debVBOX-016](../../static/img/legacy/debVBOX-016.jpg)
 
 * In `General`, click `Name: DEB00-0`
 * Set `Name: DEB00-1`
 * `OK`
 
-![debVBOX-017](//img/legacy/debVBOX-017.jpg)
+![debVBOX-017](../../static/img/legacy/debVBOX-017.jpg)
 
 ## Fine Tunning
 
-![debVBOX-018](//img/legacy/debVBOX-018.jpg)
+![debVBOX-018](../../static/img/legacy/debVBOX-018.jpg)
 
 
 ### General: Basic
@@ -138,7 +138,7 @@ Do not worry about having a 24 GB empty disk! An empty disk does not occupy much
 | Type | `Linux`|
 | Version | `Debian (64 bit)` |
 
-![debVBOX-019](//img/legacy/debVBOX-019.jpg)
+![debVBOX-019](../../static/img/legacy/debVBOX-019.jpg)
 
 
 ### General: Advanced
@@ -149,7 +149,7 @@ Do not worry about having a 24 GB empty disk! An empty disk does not occupy much
 | Drag'n Drop | `Bi-directonal`|
 
 
-![debVBOX-020](//img/legacy/debVBOX-020.jpg)
+![debVBOX-020](../../static/img/legacy/debVBOX-020.jpg)
 
 
 ### System: MotherBoard
@@ -165,7 +165,7 @@ Do not worry about having a 24 GB empty disk! An empty disk does not occupy much
 |  | `Enable Hardware Clock in UTC Time`|
 
 
-![debVBOX-021](//img/legacy/debVBOX-021.jpg)
+![debVBOX-021](../../static/img/legacy/debVBOX-021.jpg)
 
 
 ### System: Processor
@@ -182,7 +182,7 @@ Make sure that you don't cross the red line!
 
 :::
 
-![debVBOX-022](//img/legacy/debVBOX-022.jpg)
+![debVBOX-022](../../static/img/legacy/debVBOX-022.jpg)
 
 
 ### System: Acceleration
@@ -192,7 +192,7 @@ Make sure that you don't cross the red line!
 | Paravirtualization Interface | `Default` |
 | Hardware Virtualization | `Enable Nesting Page` |
 
-![debVBOX-023](//img/legacy/debVBOX-023.jpg)
+![debVBOX-023](../../static/img/legacy/debVBOX-023.jpg)
 
 
 ### Display: Screen
@@ -205,28 +205,28 @@ Make sure that you don't cross the red line!
 | Graphics Controller | `WMSVGA` |
 
 
-![debVBOX-024](//img/legacy/debVBOX-024.jpg)
+![debVBOX-024](../../static/img/legacy/debVBOX-024.jpg)
 
 
 ### Storage: Devices: Controller: IDE
 
 * REMOVE IDE CONTROLLER: (RIGHT CLICK)
 
-![debVBOX-025](//img/legacy/debVBOX-025.jpg)
+![debVBOX-025](../../static/img/legacy/debVBOX-025.jpg)
 
-![debVBOX-026](//img/legacy/debVBOX-026.jpg)
+![debVBOX-026](../../static/img/legacy/debVBOX-026.jpg)
 
 
 ### Storage: Devices: Controller: SATA
 
 * Add Optical Drive
 
-![debVBOX-027](//img/legacy/debVBOX-027.jpg)
+![debVBOX-027](../../static/img/legacy/debVBOX-027.jpg)
 
 
 * Add ISO Disk Image File
 
-![debVBOX-028](//img/legacy/debVBOX-028.jpg)
+![debVBOX-028](../../static/img/legacy/debVBOX-028.jpg)
 
 
 You can download the Debian ISO file from the official Debian website at the following URL:
@@ -238,23 +238,23 @@ You can download the Debian ISO file from the official Debian website at the fol
   is/was `debian-12.0.0-amd64-netinst.iso`
   --- but this is subject to change.
 :::
-![debVBOX-029](//img/legacy/debVBOX-029.jpg)
+![debVBOX-029](../../static/img/legacy/debVBOX-029.jpg)
 
 
 * Choose ISO Image
 
-![debVBOX-030](//img/legacy/debVBOX-030.jpg)
+![debVBOX-030](../../static/img/legacy/debVBOX-030.jpg)
 
 
 * Done
 
-![debVBOX-031](//img/legacy/debVBOX-031.jpg)
+![debVBOX-031](../../static/img/legacy/debVBOX-031.jpg)
 
 
 ### AUDIO
 * Audio: OFF
 
-![debVBOX-032](//img/legacy/debVBOX-032.jpg)
+![debVBOX-032](../../static/img/legacy/debVBOX-032.jpg)
 
 
 ### Network: Adapter 1
@@ -266,7 +266,7 @@ You can download the Debian ISO file from the official Debian website at the fol
     * Cable Connected: Checked
     * Port Forwarding (CLICK)
 
-![debVBOX-033](//img/legacy/debVBOX-033.jpg)
+![debVBOX-033](../../static/img/legacy/debVBOX-033.jpg)
 
 
 ### Port Forwarding Rules (SSH)
@@ -275,19 +275,19 @@ You can download the Debian ISO file from the official Debian website at the fol
 |---|---|---|---|---|---|
 | Rule 1 | TCP      | 127.0.0.1 | 6022      | 10.0.2.15 | 22         |
 
-![debVBOX-034](//img/legacy/debVBOX-034.jpg)
+![debVBOX-034](../../static/img/legacy/debVBOX-034.jpg)
 
 
 ## DONE `OK`
 
-![debVBOX-035](//img/legacy/debVBOX-035.jpg)
+![debVBOX-035](../../static/img/legacy/debVBOX-035.jpg)
 
 
 ## EXPORT: `DEB00-1`
 
 * TOOLS (CLICK)
 
-![debVBOX-036](//img/legacy/debVBOX-036.jpg)
+![debVBOX-036](../../static/img/legacy/debVBOX-036.jpg)
 
 :::note
 
@@ -297,7 +297,7 @@ You can download the Debian ISO file from the official Debian website at the fol
 
 * Virtual Machine: `DEB00-1`
 
-![debVBOX-037](//img/legacy/debVBOX-037.jpg)
+![debVBOX-037](../../static/img/legacy/debVBOX-037.jpg)
 
 ```
 Path: docs/virtualbox/debian-guest-preparation

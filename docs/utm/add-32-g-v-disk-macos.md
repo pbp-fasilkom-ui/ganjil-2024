@@ -6,13 +6,13 @@ sidebar_position: 2
 
 ## UTM MacOS Silicon: Adding A 32 GB VirtualDisk
 
-![do23-010](//img/legacy/do23-010.jpg)
+![do23-010](../../static/img/legacy/do23-010.jpg)
 
 * DISK SIZE (/dev/vdb): `32 GB`
 
-![do23-011](//img/legacy/do23-011.jpg)
+![do23-011](../../static/img/legacy/do23-011.jpg)
 
-![do23-012](//img/legacy/do23-012.jpg)
+![do23-012](../../static/img/legacy/do23-012.jpg)
 
 ## Crosscheck /dev/vdb
 
