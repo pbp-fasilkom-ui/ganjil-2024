@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkdocubase"] = self["webpackChunkdocubase"] || []).push([[418],{
+(self["webpackChunkdocubase"] = self["webpackChunkdocubase"] || []).push([[903],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 5262:
+/***/ 4776:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_label:'Informasi',sidebar_position:1,Path:'assignment/index'};const contentTitle='Informasi';const metadata={"unversionedId":"index","id":"index","title":"Informasi","description":"TBA.","source":"@site/assignments/index.md","sourceDirName":".","slug":"/","permalink":"/ganjil-2024/en/assignments/","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_label":"Informasi","sidebar_position":1,"Path":"assignment/index"},"sidebar":"tutorialSidebar","next":{"title":"Tugas 1","permalink":"/ganjil-2024/en/assignments/individual/assignment-1"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h1",{"id":"informasi"},`Informasi`),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`TBA.`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_label:'Final Project',sidebar_position:2,Path:'assignment/group/final'};const contentTitle='Final Project';const metadata={"unversionedId":"group/final","id":"group/final","title":"Final Project","description":"TBA.","source":"@site/i18n/en/docusaurus-plugin-content-docs-assignments/current/group/final.md","sourceDirName":"group","slug":"/group/final","permalink":"/ganjil-2024/en/assignments/group/final","draft":false,"tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"sidebar_label":"Final Project","sidebar_position":2,"Path":"assignment/group/final"},"sidebar":"tutorialSidebar","previous":{"title":"Midterm Project","permalink":"/ganjil-2024/en/assignments/group/midterm"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h1",{"id":"final-project"},`Final Project`),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`TBA.`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
