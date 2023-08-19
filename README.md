@@ -11,14 +11,26 @@ This website is built using [Docusaurus 2](https://docusaurus.io/)
 2. Yarn
 
 ## Development
+
 1. Package installation
-```
-$ yarn
-```
+
+    ```
+    $ yarn
+    ```
+
 2. Run the application
-```
-$ yarn start
-```
+
+    ```
+    $ yarn start
+    ```
+
+3. Translate plugin data
+
+    ```
+    $ yarn write-translations --locale en
+    ```
+
+    Please refer to [i18n Tutorial](https://docusaurus.io/docs/next/i18n/tutorial#translate-plugin-data).
 
 ## Ground Rules
 1. No Direct Commits to Main (Contribute using branch and pull requests)
