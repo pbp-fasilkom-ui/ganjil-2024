@@ -21,12 +21,12 @@ $ yarn start
 ```
 
 ## Ground Rules
-1. No Direct Commits to Master (Contribute using branch and pull requests)
+1. No Direct Commits to Main (Contribute using branch and pull requests)
     ```
     git checkout -b "Branch Name"
     ```
     Branch naming is preferably on the feature that is being implemented/a bug that is being fixed/a chore that is being done
-2. Make sure the production branch is named 'master'
+2. Make sure the production branch is named 'main'
 3. Deployment to github pages is done automatically through github runners (Reference point master branch)
 4. For developers in windows, make sure to configure git to use LF ending instead of CRLF using either
     a. Locally
