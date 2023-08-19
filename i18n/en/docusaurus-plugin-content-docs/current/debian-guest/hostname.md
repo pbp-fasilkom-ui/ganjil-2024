@@ -23,7 +23,7 @@ hostnamectl
 ```
 
 
-![dospA-29](/static/img/legacy/dospA-29.jpg)
+![dospA-29](../../static/img/legacy/dospA-29.jpg)
 
 ```
 Path: docs/debian-guest/hostname
