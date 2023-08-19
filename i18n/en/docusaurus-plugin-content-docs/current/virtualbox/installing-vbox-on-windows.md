@@ -44,10 +44,10 @@ E.g.,
 
 * VMX ENABLED:
 
-![debVBOX-081-VMX-enable](../../static/img/legacy/debVBOX-081-VMX-enable.jpg)
+![debVBOX-081-VMX-enable](//img/legacy/debVBOX-081-VMX-enable.jpg)
 * VMX DISABLED:
 
-![debVBOX-080-VMX-disable](../../static/img/legacy/debVBOX-080-VMX-disable.jpg)
+![debVBOX-080-VMX-disable](//img/legacy/debVBOX-080-VMX-disable.jpg)
 
 
 ## Hyper-V
@@ -80,23 +80,23 @@ dism.exe /Online /Disable-Feature:Microsoft-Hyper-V
   Possible different answers will be marked with 
   **`ARROWS`**
 
-![debVBOX-002](../../static/img/legacy/debVBOX-002.jpg)
+![debVBOX-002](//img/legacy/debVBOX-002.jpg)
 
 * Read the license agreement, and if you agree, select `I Agree` and click `Next.`
 * Choose the defaults by clicking either `Yes` or `Next.`
 
-![debVBOX-003](../../static/img/legacy/debVBOX-003.jpg)
-![debVBOX-004](../../static/img/legacy/debVBOX-004.jpg)
-![debVBOX-005](../../static/img/legacy/debVBOX-005.jpg)
+![debVBOX-003](//img/legacy/debVBOX-003.jpg)
+![debVBOX-004](//img/legacy/debVBOX-004.jpg)
+![debVBOX-005](//img/legacy/debVBOX-005.jpg)
 
 * Click `Install` to begin the installation process
 
-![debVBOX-006](../../static/img/legacy/debVBOX-006.jpg)
-![debVBOX-007](../../static/img/legacy/debVBOX-007.jpg)
+![debVBOX-006](//img/legacy/debVBOX-006.jpg)
+![debVBOX-007](//img/legacy/debVBOX-007.jpg)
 
 * Once the installation is complete, you will be prompted to click `Finish.`
 
-![debVBOX-008](../../static/img/legacy/debVBOX-008.jpg)
+![debVBOX-008](//img/legacy/debVBOX-008.jpg)
 
 ```
 Path: docs/virtualbox/installing-vbox-on-windows
