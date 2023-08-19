@@ -5,7 +5,7 @@ sidebar_position: 4
 ## ROOT
 
 
-![dospA-23](../../static/img/legacy/dospA-23.jpg)
+![dospA-23](/img/legacy/dospA-23.jpg)
 
 ```
 Path: docs/debian-guest/root
