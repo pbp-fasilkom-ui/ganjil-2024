@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Platform-Based Programming Blog</title>
+        <link>https://pbp-fasilkom-ui.github.io/ganjil-2024/en/blog</link>
+        <description>Platform-Based Programming Blog</description>
+        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Hallo!]]></title>
+            <link>https://pbp-fasilkom-ui.github.io/ganjil-2024/en/blog/welcome</link>
+            <guid>https://pbp-fasilkom-ui.github.io/ganjil-2024/en/blog/welcome</guid>
+            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[“This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.]]></description>
+            <content:encoded><![CDATA[<p>“This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.</p><p>Therefore, this is NOT about the BEST PRACTICE to do something! No animals were harmed while creating these pages. No original ideas were used on these pages. Most ideas were shamelessly stolen from “Here, There, and Everywhere”, including but not limited to “bootstrap,” “GitHub Page Themes,” “Mike Dane,” “stack overflow,” “w3schools,” et al.</p><p>This site was developed on GitHub and is deployed on GitHub Page. Unfortunately, it is NOT “mobile-friendly” (yet). If you like it, you can do whatever you want: clone it, fork it, copy it, or even ignore it! The source code is available at GitHub.com or it can be downloaded here.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/jEoM3qan9Gs" frameborder="0"></iframe>]]></content:encoded>
+            <category>This</category>
+            <category>Is</category>
+            <category>The</category>
+            <category>Way</category>
+            <category>!</category>
+        </item>
+    </channel>
+</rss>

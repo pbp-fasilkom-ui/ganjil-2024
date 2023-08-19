@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://pbp-fasilkom-ui.github.io/ganjil-2024/blog</id>
+    <title>Platform-Based Programming Blog</title>
+    <updated>2021-08-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://pbp-fasilkom-ui.github.io/ganjil-2024/blog"/>
+    <subtitle>Platform-Based Programming Blog</subtitle>
+    <icon>https://pbp-fasilkom-ui.github.io/ganjil-2024/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Hallo!]]></title>
+        <id>https://pbp-fasilkom-ui.github.io/ganjil-2024/blog/welcome</id>
+        <link href="https://pbp-fasilkom-ui.github.io/ganjil-2024/blog/welcome"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[“This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.]]></summary>
+        <content type="html"><![CDATA[<p>“This Is“ a collection of “How Me Do It“ records. More precisely, how me DID it in the past. When you read this, it might already have been done differently! You might ask why “ME,” not “I”? Because ME rhymes better.</p><p>Therefore, this is NOT about the BEST PRACTICE to do something! No animals were harmed while creating these pages. No original ideas were used on these pages. Most ideas were shamelessly stolen from “Here, There, and Everywhere”, including but not limited to “bootstrap,” “GitHub Page Themes,” “Mike Dane,” “stack overflow,” “w3schools,” et al.</p><p>This site was developed on GitHub and is deployed on GitHub Page. Unfortunately, it is NOT “mobile-friendly” (yet). If you like it, you can do whatever you want: clone it, fork it, copy it, or even ignore it! The source code is available at GitHub.com or it can be downloaded here.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/jEoM3qan9Gs" frameborder="0"></iframe>]]></content>
+        <author>
+            <name>C. BinKadal</name>
+            <uri>https://github.com/cbkadal</uri>
+        </author>
+        <author>
+            <name>J. Walker</name>
+            <uri>https://doit.vlsm.org/</uri>
+        </author>
+        <category label="This" term="This"/>
+        <category label="Is" term="Is"/>
+        <category label="The" term="The"/>
+        <category label="Way" term="Way"/>
+        <category label="!" term="!"/>
+    </entry>
+</feed>
