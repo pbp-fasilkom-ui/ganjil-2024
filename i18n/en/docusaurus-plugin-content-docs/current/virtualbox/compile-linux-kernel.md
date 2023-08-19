@@ -161,7 +161,7 @@ time make
     user    6900m36.555s
     sys     864m34.820s
     ```
-      ![doit-009](/static/img/legacy/doit-009.jpg)
+      ![doit-009](../../static/img/legacy/doit-009.jpg)
       * **One more time** (after fixing the Windows 10 drivers):
         ```
         real    72m26.981s
