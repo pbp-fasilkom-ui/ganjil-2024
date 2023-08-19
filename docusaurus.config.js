@@ -52,13 +52,6 @@ const config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -84,7 +77,16 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog/welcome', label: 'Blog', position: 'left'},
+          {
+            to: '/assignments/',
+            label: 'Tugas',
+            position: 'left',
+          },
+          {
+            to: 'playground',
+            label: 'Playground',
+            position: 'right',
+          },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -95,20 +97,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Introduction',
-            items: [
-              {
-                label: 'Disclaimer',
-                to: '/blog/welcome',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Playground',
+                to: '/playground/',
               },
               {
                 label: 'GitHub',
@@ -141,6 +134,15 @@ const config = {
           },
         };
       },
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'assignments',
+          path: 'assignments',
+          routeBasePath: 'assignments',
+          sidebarPath: require.resolve('./sidebars.js')
+        },
+      ],
     ],
 };
 

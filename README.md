@@ -39,4 +39,6 @@ $ yarn start
     ```
 5. Make sure to make a clear commit message
 
-Last Edit: 20/07/2023
+## Resources
+
+[doit-revamp](https://github.com/cbk2000/doit-revamp)
