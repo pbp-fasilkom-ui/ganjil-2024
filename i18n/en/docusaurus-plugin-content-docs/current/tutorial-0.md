@@ -8,6 +8,8 @@ Path: docs/tutorial-0
 
 Platform-Based Programming (CSGE602022) — Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2023/2024
 
+---
+
 ## Learning Objectives
 
 After completing this tutorial, students are expected to be able to:
@@ -43,7 +45,7 @@ This overview will help you to understand Git and GitHub.
 
 With a basic understanding of Git and GitHub, you are ready to step further in a structured and collaborative software development world.
 
-### Step 1: Creating a GitHub Account
+### Tutorial: Creating a GitHub Account
 
 With a GitHub account, you can start collaborating on projects that utilize Git.
 
@@ -75,7 +77,7 @@ With a GitHub account, you can start collaborating on projects that utilize Git.
 - GitHub account is a gateway to collaborate on projects and store your project in this platform.
 - Make sure the registration information you provide is accurate and safe.
 
-### Congratulations, You Have Created A GitHub Account!
+#### Congratulations, You Have Created A GitHub Account!
 
 Now you have a GitHub account capable of storing projects, collaborating with others, and more.
 

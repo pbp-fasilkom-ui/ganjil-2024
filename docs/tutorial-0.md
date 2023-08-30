@@ -8,6 +8,8 @@ Path: docs/tutorial-0
 
 Pemrograman Berbasis Platform (CSGE602022) — diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2023/2024
 
+---
+
 ## Tujuan Pembelajaran
 
 Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
@@ -43,7 +45,7 @@ Pengenalan awal ini akan membantumu memahami dasar-dasar mengenai Git dan platfo
 
 Dengan pemahaman dasar mengenai Git dan GitHub, kamu siap untuk melangkah lebih jauh dalam dunia pengembangan perangkat lunak yang kolaboratif dan terstruktur.
 
-### Langkah 1: Membuat Akun di GitHub
+### Tutorial: Membuat Akun di GitHub
 
 Langkah selanjutnya adalah membuat akun di GitHub, yang akan memungkinkanmu untuk mulai berkolaborasi pada proyek-proyek menggunakan Git.
 
@@ -75,7 +77,7 @@ Langkah selanjutnya adalah membuat akun di GitHub, yang akan memungkinkanmu untu
 - Akun GitHub adalah pintu masuk untuk terlibat dalam kolaborasi proyek dan menyimpan proyekmu di platform ini.
 - Pastikan informasi pendaftaran yang kamu berikan akurat dan aman.
 
-### Selamat, Kamu Telah Membuat Akun GitHub
+#### Selamat, Kamu Telah Membuat Akun GitHub
 
 Kamu sekarang telah memiliki akun GitHub yang dapat digunakan untuk menyimpan proyek, berkolaborasi dengan orang lain, dan masih banyak lagi.
 
