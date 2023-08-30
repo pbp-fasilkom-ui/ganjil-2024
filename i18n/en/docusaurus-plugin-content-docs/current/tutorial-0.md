@@ -290,15 +290,15 @@ As mentioned earlier (Step 2), **push** is the process of sending the changes yo
 
 2. Modify the content of the README.md file by adding your hobby. For example:
 
-   ```md
-        Name       : Kevin Ivan Eda Radhiyya
+    ```md
+    Name       : Kevin Ivan Eda Radhiyya
 
-        StudentID  : 2201233210
+    StudentID  : 2201233210
 
-        Class      : PBP B
+    Class      : PBP B
 
-        Hobby      : Sleeping
-   ```
+    Hobby      : Sleeping
+    ```
 
 3. Push to the GitHub Repository
 
