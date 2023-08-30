@@ -17,9 +17,10 @@ Setelah menyelesaikan tutorial ini, mahasiswa diharapkan untuk dapat:
 - Membuat repositori Git lokal dan daring (GitHub).
 - Menambahkan *remote* antara repositori Git lokal dan repositori daring pada GitHub.
 - Memahami *branching* pada Git dan mampu melakukan *merge request*/*pull request*.
+- Membuat aplikasi Django secara lokal.
 - Melakukan *deployment* aplikasi Django pada Adaptable.io
 
-## Tutorial: Pembuatan Akun GitHub (Lewati Jika Sudah Ada)
+## Tutorial: Pembuatan Akun GitHub
 
 ### Pengenalan Tentang Git dan GitHub
 

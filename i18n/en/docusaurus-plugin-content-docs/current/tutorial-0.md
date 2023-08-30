@@ -17,9 +17,10 @@ After completing this tutorial, students are expected to be able to:
 - Create Git repositories, both local and online on GitHub.
 - Create a remote between local and online repositories.
 - Understand Git branching and able to perform merge request/pull request.
-- Create a Django application deployment on Adaptable.io.
+- Create a Django application locally.
+- Deploy a Django application on Adaptable.io.
 
-## Tutorial: Creating a GitHub Account (Skip if already owned)
+## Tutorial: Creating a GitHub Account
 
 ### Introduction to Git and GitHub
 
