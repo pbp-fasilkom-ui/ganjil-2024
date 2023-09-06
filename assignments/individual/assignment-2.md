@@ -51,11 +51,11 @@ Beberapa contoh ide aplikasi pengelolaan yang dapat kamu buat adalah sebagai ber
     - Jelaskan mengapa kita menggunakan ***virtual environment***? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan ***virtual environment***?
     - Jelaskan apakah itu MVC, MVT, MVVM dan perbedaan dari ketiganya.
 
-Perhatikan bahwa kamu harus mengerjakan tugas ini menggunakan repositori yang **berbeda** dengan tutorial.
+Perhatikan bahwa kamu harus mengerjakan tugas ini menggunakan repositori yang **berbeda** dengan tutorial, sehingga pastikan kamu **membuat repositori baru** untuk tugas ini.
 
 ## Tenggat Waktu Pengerjaan
 
-Tenggat waktu pengerjaan Tugas 2 adalah hari **Rabu, 13 September, pukul 12.00.**
+Tenggat waktu pengerjaan Tugas 2 adalah hari **Rabu, 13 September 2023, pukul 12.00.**
 
 Harap mengumpulkan link repositori yang kamu gunakan ke dalam slot submisi yang telah disediakan di SCELE.
 
