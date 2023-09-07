@@ -25,7 +25,7 @@ Tugas dikumpulkan dalam format *Portable Document File* (`*.pdf`) dengan ketentu
 
 ## Tenggat Waktu Pengerjaan
 
-Tenggat waktu pengerjaan Tugas 1 adalah hari **Rabu, 6 September 2023, pukul 12.00**.
+Tenggat waktu pengerjaan Tugas 1 adalah hari **Rabu, 6 September 2023, pukul 12.00 siang**.
 
 Harap mengumpulkan esai yang telah kamu buat ke dalam slot submisi yang telah disediakan di SCELE.
 

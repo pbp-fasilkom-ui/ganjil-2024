@@ -29,9 +29,9 @@ Some app ideas for your management app are:
 - Trading card collection management.
 - Library collection management.
 
-## Assignment Checklists
+## Assignment Checklist
 
-Checklists for this assignment are:
+The checklist for this assignment are:
 
 - [ ] Create a new Django project.
 - [ ] Create an app with the name `main` on that project.
@@ -44,7 +44,7 @@ Checklists for this assignment are:
 - [ ] Create a routing in `urls.py` to map the function in`views.py` to an URL.
 - [ ] Deploy your app to Adaptable so it can be accessed through the internet.
 - [ ] Create a `README.md` that contains a URL to access your deployed app and answers to these questions:
-  - How do you implement the checklists? Explain in a step-by-step manner (not just copy-paste from the tutorial).
+  - How do you implement the tasks in the checklist? Explain in a step-by-step manner (not just copy-paste from the tutorial).
   - Create a diagram explaining the flow of client requests to a Django web app and its response. Also in the diagram, explain the connections between `urls.py`, `views.py`, `models.py`, and the `HTML` file(s).
   - What is the purpose of a **virtual environment**? Can we create a Django web app without a **virtual environment**?
   - What is MVC, MVT, and MVVM? Explain the differences between the three.

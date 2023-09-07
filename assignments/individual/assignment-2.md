@@ -55,7 +55,7 @@ Perhatikan bahwa kamu harus mengerjakan tugas ini menggunakan repositori yang **
 
 ## Tenggat Waktu Pengerjaan
 
-Tenggat waktu pengerjaan Tugas 2 adalah hari **Rabu, 13 September 2023, pukul 12.00.**
+Tenggat waktu pengerjaan Tugas 2 adalah hari **Rabu, 13 September 2023, pukul 12.00 siang**.
 
 Harap mengumpulkan link repositori yang kamu gunakan ke dalam slot submisi yang telah disediakan di SCELE.
 
