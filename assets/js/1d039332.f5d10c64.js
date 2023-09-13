@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunkdocubase"] = self["webpackChunkdocubase"] || []).push([[202],{
+(self["webpackChunkdocubase"] = self["webpackChunkdocubase"] || []).push([[866],{
 
 /***/ 3905:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -212,7 +212,7 @@ function createElement (type, props) {
 
 /***/ }),
 
-/***/ 2936:
+/***/ 8518:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7462);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3905);
-/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_label:'Midterm Project',sidebar_position:1,Path:'assignment/individual/midterm'};const contentTitle='Midterm Project';const metadata={"unversionedId":"group/midterm","id":"group/midterm","title":"Midterm Project","description":"TBA.","source":"@site/i18n/en/docusaurus-plugin-content-docs-assignments/current/group/midterm.md","sourceDirName":"group","slug":"/group/midterm","permalink":"/ganjil-2024/en/assignments/group/midterm","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_label":"Midterm Project","sidebar_position":1,"Path":"assignment/individual/midterm"},"sidebar":"tutorialSidebar","previous":{"title":"Assignment 2","permalink":"/ganjil-2024/en/assignments/individual/assignment-2"},"next":{"title":"Final Project","permalink":"/ganjil-2024/en/assignments/group/final"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h1",{"id":"midterm-project"},`Midterm Project`),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`TBA.`));};MDXContent.isMDXComponent=true;
+/* @jsxRuntime classic */ /* @jsx mdx */ /* @jsxFrag React.Fragment */const frontMatter={sidebar_label:'Proyek Tengah Semester',sidebar_position:1,Path:'assignment/group/midterm'};const contentTitle='Proyek Tengah Semester';const metadata={"unversionedId":"group/midterm","id":"group/midterm","title":"Proyek Tengah Semester","description":"TBA.","source":"@site/assignments/group/midterm.md","sourceDirName":"group","slug":"/group/midterm","permalink":"/ganjil-2024/assignments/group/midterm","draft":false,"tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_label":"Proyek Tengah Semester","sidebar_position":1,"Path":"assignment/group/midterm"},"sidebar":"tutorialSidebar","previous":{"title":"Tugas 3","permalink":"/ganjil-2024/assignments/individual/assignment-3"},"next":{"title":"Proyek Akhir Semester","permalink":"/ganjil-2024/assignments/group/final"}};const assets={};const toc=[];const layoutProps={toc};const MDXLayout="wrapper";function MDXContent(_ref){let{components,...props}=_ref;return (0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)(MDXLayout,(0,_home_runner_work_ganjil_2024_ganjil_2024_node_modules_babel_runtime_helpers_esm_extends_js__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("h1",{"id":"proyek-tengah-semester"},`Proyek Tengah Semester`),(0,_mdx_js_react__WEBPACK_IMPORTED_MODULE_1__/* .mdx */ .kt)("p",null,`TBA.`));};MDXContent.isMDXComponent=true;
 
 /***/ })
 
