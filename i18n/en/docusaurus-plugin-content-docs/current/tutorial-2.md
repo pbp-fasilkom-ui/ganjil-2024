@@ -421,7 +421,7 @@ Previously, there has been no data added to the application. Now, we will create
             return HttpResponse(serializers.serialize("json", data), content_type="application/json")
         ```
 
-4. Open the `urls.py` file located in the `shopping_list` folder and import the functions you created earlier.
+4. Open the `urls.py` file located in the `main` folder and import the functions you created earlier.
 
     ```python
     from main.views import show_main, create_product, show_xml, show_json, show_xml_by_id, show_json_by_id

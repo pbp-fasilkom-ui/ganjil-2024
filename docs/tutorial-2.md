@@ -376,7 +376,7 @@ Sampai saat ini, belum ada data yang ditambahkan ke dalam aplikasi. Sekarang, ki
         return HttpResponse(serializers.serialize("json", data), content_type="application/json")
     ```
 
-3. Buka `urls.py` yang ada pada folder `Product` dan _import_ fungsi yang sudah kamu buat tadi.
+3. Buka `urls.py` yang ada pada folder `main` dan _import_ fungsi yang sudah kamu buat tadi.
 
     ```python
     from main.views import show_main, create_product, show_xml, show_json
@@ -420,7 +420,7 @@ Sampai saat ini, belum ada data yang ditambahkan ke dalam aplikasi. Sekarang, ki
             return HttpResponse(serializers.serialize("json", data), content_type="application/json")
         ```
 
-4. Buka `urls.py` yang ada pada folder `shopping_list` dan impor fungsi yang sudah kamu buat tadi.
+4. Buka `urls.py` yang ada pada folder `main` dan impor fungsi yang sudah kamu buat tadi.
 
     ```python
     from main.views import show_main, create_product, show_xml, show_json, show_xml_by_id, show_json_by_id 
