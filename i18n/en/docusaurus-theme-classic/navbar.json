@@ -12,7 +12,7 @@
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Tugas": {
-    "message": "Assignments",
+    "message": "Assignment",
     "description": "Navbar item with label Tugas"
   },
   "item.label.Playground": {

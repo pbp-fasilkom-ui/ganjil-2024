@@ -8,6 +8,8 @@ Path: docs/tutorial-2
 
 Platform-Based Programming (CSGE602022) — Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2023/2024
 
+---
+
 ## Learning Objectives
 
 After completing this tutorial, students are expected to be able to:
@@ -641,11 +643,11 @@ At this point, you have configured your Django application for deployment to PBP
 
 4. Create three new secret variables with the following specifications:
 
-    | **Name**              | **Secret**                       |
-    |-----------------------|----------------------------------|
-    | DOKKU_SERVER_IP       | pbp.cs.ui.ac.id                  |
-    | DOKKU_APP_NAME        | UsernameSIAK-tutorial            |
-    | DOKKU_SSH_PRIVATE_KEY | [The content of SSH private key] |
+    | **Name**              | **Secret**                            |
+    |-----------------------|---------------------------------------|
+    | DOKKU_SERVER_IP       | pbp.cs.ui.ac.id                       |
+    | DOKKU_APP_NAME        | UsernameSIAK-tutorial                 |
+    | DOKKU_SSH_PRIVATE_KEY | [The content of your SSH private key] |
 
     > Replace `UsernameSIAK-tutorial` with your own data and dots with dashes. For example: muhammad-iqbal111-tutorial.
 

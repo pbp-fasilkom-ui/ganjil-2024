@@ -22,7 +22,7 @@ function HomepageHeader() {
                     <Link
                         className="button button--secondary button--lg" style={{ marginLeft: "0.5rem" }}
                         to="/assignments">
-                        Assignments
+                        Assignment
                     </Link>
                 </div>
             </div>
