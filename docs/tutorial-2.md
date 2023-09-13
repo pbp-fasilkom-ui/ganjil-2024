@@ -647,9 +647,9 @@ Saat ini, kita sudah mengonfigurasi aplikasi Django kita untuk _deployment_ ke P
 
     > Sesuaikan `UsernameSIAK-tutorial` dengan data kalian, ya. Ubah juga tanda titik menjadi tanda strip. Contoh: `muhammad-iqbal111-tutorial`.
 
-    > Untuk sekarang, **jangan isi `DOKKU_SERVER_IP` dengan _value_ yang diberikan**. Isi variabel `DOKKU_APP_NAME` dan `DOKKU_SSH_PRIVATE_KEY` saja karena masih ada isu di server untuk saat ini.
+    > (13 September 2023) Untuk sekarang, **jangan isi `DOKKU_SERVER_IP` dengan _value_ yang diberikan**. Isi variabel `DOKKU_APP_NAME` dan `DOKKU_SSH_PRIVATE_KEY` saja karena masih ada isu di server untuk saat ini.
 
-    Buka [tutorial berikut](https://docs.google.com/document/d/1ZVsfUBaEGvuioYMmP-gboKLFd_2c_EPTYyC-urev5UQ/edit?usp=sharing) untuk menyalin _private key_ kamu.
+    > Buka [tutorial berikut](https://docs.google.com/document/d/1ZVsfUBaEGvuioYMmP-gboKLFd_2c_EPTYyC-urev5UQ/edit?usp=sharing) untuk menyalin _private key_ kamu.
 
     Contoh hasil akan tampak seperti berikut.
 
