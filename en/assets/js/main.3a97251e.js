@@ -11974,7 +11974,7 @@ __webpack_require__.r(__webpack_exports__);
         },
         {
           "to": "/assignments/",
-          "label": "Assignments",
+          "label": "Assignment",
           "position": "left"
         },
         {
