@@ -651,6 +651,8 @@ At this point, you have configured your Django application for deployment to PBP
 
     > Replace `UsernameSIAK-tutorial` with your own data and dots with dashes. For example: muhammad-iqbal111-tutorial.
 
+    > (13 September 2023) For now, **do not fill `DOKKU_SERVER_IP` with the defined specification**. Only fill `DOKKU_APP_NAME` and `DOKKU_SSH_PRIVATE_KEY` as we are experiencing issues in the server for now.
+
     Refer to [this tutorial](https://docs.google.com/document/d/1ZVsfUBaEGvuioYMmP-gboKLFd_2c_EPTYyC-urev5UQ/edit?usp=sharing) for instructions on how to copy your private key.
 
     Example results will look like this:
