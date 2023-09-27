@@ -299,7 +299,7 @@ Pada mata kuliah PBP ini, kita akan memfokuskan pembelajaran CSS menggunakan fra
 
 1. Buka project django kalian **(shopping_list)**, lalu buka file `base.html` yang telah dibuat sebelumnya pada templates folder yang berada di root project kalian. 
 
-2. Didalam `templates/base.html`, tambahkan tag <meta name="viewport"> agar halaman web kamu dapat menyesuaikan ukuran dan perilaku perangkat mobile **(apabila belum)**.
+2. Didalam `templates/base.html`, tambahkan tag `<meta name="viewport">` agar halaman web kamu dapat menyesuaikan ukuran dan perilaku perangkat mobile **(apabila belum)**.
 
     ```html
     <head>
