@@ -58,7 +58,7 @@ Good luck and have a great time working on the project! 😄
 1. Implement _models_ by writing their own models, reusing models provided by Django, or using models developed by other group members in separate module.
 2. Implement _views_ to handle incoming requests and produce HTML/JSON-based responses.
 3. Implement HTML templates with a systematic and efficient structure, such as `base.html`, `header.html`, and `footer.html`.
-4. Implement _templates_ using CSS framework/toolkit that assist in implementing responsive design (such as: [Bootstrap][https://getbootstrap.com/], [Tailwind][https://tailwindcss.com/]).
+4. Implement _templates_ using CSS framework/toolkit that assist in implementing responsive design (such as: [Bootstrap](https://getbootstrap.com/), [Tailwind](https://tailwindcss.com/).
 5. Implement a page with a form that accepts user input that shall be processed by views. Examples of processing by views include inserting data into the model, querying data from the model, and updating data in the model.
 6. Implement client-side scripting and asynchronous data loading (AJAX) using JavaScript.
 7. Implement authentication and authorisation on a certain part of the functionality implemented in the module. For example, a menu is only visible when the user has logged in and authorised to view the hidden menu.
