@@ -35,9 +35,9 @@ Selamat mengerjakan. 😄
 4. Setiap kelompok mengimplementasikan katalog buku dalam bentuk *class models* dan menyimpan data dari dataset ke dalam *basis data* Django. Dataset katalog buku harus berisi **minimal 100 buku**. Sumber dataset katalog buku boleh berasal dari mana saja, misalnya dari Project Gutenberg, Google Books API, Kaggle, dan Data Skripsi LONTAR.
     Berikut adalah contoh URL dataset yang dapat digunakan:
     - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html> dan <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>
-    - Google Books API: <https://developers.google.com/books/>
-    - Kaggle: <https://www.kaggle.com/datasets?search=book>
-    - Data Skripsi Lontar: <https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EcOI_lrVaVtHhvOF3foZJ7kBDXPWaOmyTtUCiMYzjLKJdw?e=BgcFSQ>
+    - [Google Books API](https://developers.google.com/books/)
+    - [Kaggle](https://www.kaggle.com/datasets?search=book)
+    - [Data Skripsi Lontar](https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EY1Lmwm40rJLhtbWtKerNOYBI3BxiLSlDbLuL3mFIsw8wA?e=DL43jL)
 5. Setiap anggota kelompok mengerjakan modul yang berbeda. Modul ditentukan oleh kelompok yang disesuaikan dengan ide aplikasi yang sudah didiskusikan dalam kelompok.
 6. Tugas kelompok dikumpulkan sebagai kesatuan aplikasi web.
 

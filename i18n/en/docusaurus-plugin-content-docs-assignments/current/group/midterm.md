@@ -47,9 +47,9 @@ Good luck and have a great time working on the project! 😄
 
     Here are some examples of dataset URLs that can be used:
     - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html> dan <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>
-    - Google Books API: <https://developers.google.com/books/>
-    - Kaggle: <https://www.kaggle.com/datasets?search=book>
-    - LONTAR Thesis Data: <https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EcOI_lrVaVtHhvOF3foZJ7kBDXPWaOmyTtUCiMYzjLKJdw?e=BgcFSQ>
+    - [Google Books API](https://developers.google.com/books/)
+    - [Kaggle](https://www.kaggle.com/datasets?search=book)
+    - [LONTAR Thesis Data](https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EY1Lmwm40rJLhtbWtKerNOYBI3BxiLSlDbLuL3mFIsw8wA?e=DL43jL)
 5. Each group member should work individually on a module. The modules will be decided by the group during project planning in the group and should be suitable for implementing the project idea.
 6. The midterm project is submitted as a unified web application.
 
@@ -58,7 +58,7 @@ Good luck and have a great time working on the project! 😄
 1. Implement _models_ by writing their own models, reusing models provided by Django, or using models developed by other group members in separate module.
 2. Implement _views_ to handle incoming requests and produce HTML/JSON-based responses.
 3. Implement HTML templates with a systematic and efficient structure, such as `base.html`, `header.html`, and `footer.html`.
-4. Implement _templates_ using CSS framework/toolkit that assist in implementing responsive design (such as: [Bootstrap][https://getbootstrap.com/], [Tailwind][https://tailwindcss.com/]).
+4. Implement _templates_ using CSS framework/toolkit that assist in implementing responsive design (such as [Bootstrap](https://getbootstrap.com/) or [Tailwind](https://tailwindcss.com/)).
 5. Implement a page with a form that accepts user input that shall be processed by views. Examples of processing by views include inserting data into the model, querying data from the model, and updating data in the model.
 6. Implement client-side scripting and asynchronous data loading (AJAX) using JavaScript.
 7. Implement authentication and authorisation on a certain part of the functionality implemented in the module. For example, a menu is only visible when the user has logged in and authorised to view the hidden menu.
