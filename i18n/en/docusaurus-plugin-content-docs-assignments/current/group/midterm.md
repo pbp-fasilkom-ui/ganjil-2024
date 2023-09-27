@@ -53,7 +53,7 @@ Good luck and have a great time working on the project! 😄
 5. Each group member should work individually on a module. The modules will be decided by the group during project planning in the group and should be suitable for implementing the project idea.
 6. The midterm project is submitted as a unified web application.
 
-## Aturan Khusus per Anggota Kelompok
+## Specific Rules for Each Group Member
 
 1. Implement _models_ by writing their own models, reusing models provided by Django, or using models developed by other group members in separate module.
 2. Implement _views_ to handle incoming requests and produce HTML/JSON-based responses.
