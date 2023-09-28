@@ -47,7 +47,6 @@ Good luck and have a great time working on the project! 😄
     - This theme aligns with the theme of the 12th Indonesian Language Congress, which will be held from October 25 to 28, 2023, titled "Literacy in Diversity for the Progress of the Nation." The Indonesian Language Congress is the highest forum discussing language and literary issues in Indonesia. The Indonesian Language Congress is held every five years by the Language Development and Fostering Agency, Ministry of Education, Culture, Research, and Technology. <https://kbi.kemdikbud.go.id/>.
     - This theme is in line with the commemoration of Language and Literature Month, which is commemorated every October in Indonesia to remember the history of the birth of Bahasa Indonesia.
 4. Each group implements a book catalog in the form of class models and stores data from the dataset into the Django database. The book catalog dataset must contain a minimum of 100 books. The source of the book catalog dataset can come from anywhere, for example, from Project Gutenberg, Google Books API, Kaggle, and LONTAR Thesis Data."
-
     Here are some examples of dataset URLs that can be used:
     - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html>, <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>, and <https://drive.google.com/file/d/17jiAwHx_68zUrolbTl75IoLRFK_JLYrx/view>
     - [Google Books API](https://developers.google.com/books/)
