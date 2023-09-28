@@ -31,10 +31,13 @@ Selamat mengerjakan. 😄
 
 1. Satu kelompok terdiri atas 4-6 orang. Pembagian kelompok dapat dilihat di SCELE.
 2. Satu kelompok membuat satu repositori Git di dalam satu [organisasi](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) yang digunakan oleh seluruh anggota kelompok untuk bekerja sama. Kumpulkan tautan repositori ke SCELE.
-3. Setiap kelompok dipersilakan untuk mencari ide sendiri mengenai aplikasi yang akan dibuat. Tema aplikasi adalah **literasi dan buku**.
+3. Setiap kelompok dipersilakan untuk mencari ide sendiri mengenai aplikasi yang akan dibuat. Tema aplikasi adalah **literasi dan buku**. Tema ini dipilih karena tiga alasan: 
+    - Untuk meningkatkan kesadaran kita tentang pentingnya literasi.
+    - Tema ini sesuai dengan tema Kongres Bahasa Indonesia XII yang akan diselenggarakan pada tanggal 25—28 Oktober 2023, yaitu "Literasi dalam Kebinekaan untuk Kemajuan Bangsa." Kongres Bahasa Indonesia adalah forum tertinggi yang membahas masalah kebahasaan dan kesastraan di Indonesia. Kongres Bahasa Indonesia diselenggarakan setiap lima tahun sekali oleh Badan Pengembangan dan Pembinaan Bahasa, Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. <https://kbi.kemdikbud.go.id/>.
+    - Tema ini sesuai dengan peringatan Bulan Bahasa dan Sastra yang dilakukan setiap bulan Oktober di Indonesia untuk mengingat sejarah kelahiran bahasa Indonesia.
 4. Setiap kelompok mengimplementasikan katalog buku dalam bentuk *class models* dan menyimpan data dari dataset ke dalam *basis data* Django. Dataset katalog buku harus berisi **minimal 100 buku**. Sumber dataset katalog buku boleh berasal dari mana saja, misalnya dari Project Gutenberg, Google Books API, Kaggle, dan Data Skripsi LONTAR.
     Berikut adalah contoh URL dataset yang dapat digunakan:
-    - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html> dan <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>
+    - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html>, <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>, dan <https://drive.google.com/file/d/17jiAwHx_68zUrolbTl75IoLRFK_JLYrx/view>
     - [Google Books API](https://developers.google.com/books/)
     - [Kaggle](https://www.kaggle.com/datasets?search=book)
     - [Data Skripsi Lontar](https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EY1Lmwm40rJLhtbWtKerNOYBI3BxiLSlDbLuL3mFIsw8wA?e=DL43jL)
