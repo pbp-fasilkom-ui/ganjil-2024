@@ -42,11 +42,14 @@ Good luck and have a great time working on the project! 😄
 
 1. Each group comprises of 4-5 person. Group members assignment can be seen on SCELE.
 2. Each group should create a single Git repository on one GitHub [organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) that all group members use to collaborate. Share the link to your group's Git repository through a submission slot on SCELE.
-3. Each group may propose their own ideas for the application they are building. The theme for the application is **books and literacy**.
+3. Each group may propose their own ideas for the application they are building. The theme for the application is **books and literacy**. This theme was chosen for three reasons:
+    - To raise our awareness of the importance of literacy.
+    - This theme aligns with the theme of the 12th Indonesian Language Congress, which will be held from October 25 to 28, 2023, titled "Literacy in Diversity for the Progress of the Nation." The Indonesian Language Congress is the highest forum discussing language and literary issues in Indonesia. The Indonesian Language Congress is held every five years by the Language Development and Fostering Agency, Ministry of Education, Culture, Research, and Technology. <https://kbi.kemdikbud.go.id/>.
+    - This theme is in line with the commemoration of Language and Literature Month, which is commemorated every October in Indonesia to remember the history of the birth of Bahasa Indonesia.
 4. Each group implements a book catalog in the form of class models and stores data from the dataset into the Django database. The book catalog dataset must contain a minimum of 100 books. The source of the book catalog dataset can come from anywhere, for example, from Project Gutenberg, Google Books API, Kaggle, and LONTAR Thesis Data."
 
     Here are some examples of dataset URLs that can be used:
-    - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html> dan <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>
+    - Project Gutenberg: <https://www.gutenberg.org/ebooks/offline_catalogs.html>, <https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv>, and <https://drive.google.com/file/d/17jiAwHx_68zUrolbTl75IoLRFK_JLYrx/view>
     - [Google Books API](https://developers.google.com/books/)
     - [Kaggle](https://www.kaggle.com/datasets?search=book)
     - [LONTAR Thesis Data](https://univindonesia-my.sharepoint.com/:x:/g/personal/iisafriyanti_office_ui_ac_id/EY1Lmwm40rJLhtbWtKerNOYBI3BxiLSlDbLuL3mFIsw8wA?e=DL43jL)
