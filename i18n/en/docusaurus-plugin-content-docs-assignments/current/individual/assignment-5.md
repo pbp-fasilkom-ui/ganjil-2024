@@ -23,7 +23,7 @@ Checklist for this assignment is as follows:
     - [ ] Explain some of the HTML5 tags that you know.
     - [ ] What are the differences between margin and padding?
     - [ ] What are the differences between the CSS framework Tailwind and Bootstrap? When should we use Bootstrap rather than Tailwind, and vice versa?
-
+    - [ ] Explain how you implemented the *checklist* above step-by-step (not just following the tutorial).
 - [ ] Perform `add`-`commit`-`push` to GitHub.
 
 ## Deadline

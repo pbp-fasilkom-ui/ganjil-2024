@@ -25,6 +25,7 @@ Pada tugas ini, kamu akan mengimplementasikan desain web berdasarkan beberapa ha
     - [ ] Jelaskan HTML5 Tag yang kamu ketahui.
     - [ ] Jelaskan perbedaan antara *margin* dan *padding*.
     - [ ] Jelaskan perbedaan antara *framework* CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
+    - [ ] Jelaskan bagaimana cara kamu mengimplementasikan *checklist* di atas secara *step-by-step* (bukan hanya sekadar mengikuti tutorial).
 - [ ] Melakukan `add`-`commit`-`push` ke GitHub.
 
 ## Tenggat Waktu Pengerjaan
