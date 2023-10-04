@@ -382,7 +382,7 @@ Pada bagian ini, kamu akan membuat fungsi pada *views* untuk menambahkan produk 
 
 2. Tambahkanlah kode berikut sebagai struktur *table*.
 
-    ```HTML
+    ```html
     <table id="product_table"></table>
     ```
 
@@ -440,7 +440,7 @@ Pada bagian ini, kamu akan membuat fungsi pada *views* untuk menambahkan produk 
 
 1. Tambahkan kode berikut untuk mengimplementasikan modal ([Bootstrap](https://getbootstrap.com/docs/5.3/components/modal/)) pada aplikasi kamu.
 
-    ```HTML
+    ```html
     ...
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -482,7 +482,7 @@ Pada bagian ini, kamu akan membuat fungsi pada *views* untuk menambahkan produk 
 
 2. Menambahkan `button` yang berfungsi untuk menampilkan modal.
 
-    ```HTML
+    ```html
     ...
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product by AJAX</button>
     ...

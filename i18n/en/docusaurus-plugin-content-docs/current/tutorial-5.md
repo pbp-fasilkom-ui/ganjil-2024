@@ -378,7 +378,7 @@ In this section, you will implement a `views` function to add new product to the
 
 2. Add this code as the table structure:
 
-    ```HTML
+    ```html
     <table id="product_table"></table>
     ```
 
@@ -436,7 +436,7 @@ In this section, you will implement a `views` function to add new product to the
 
 1. Add this code to implements a form modal ([Bootstrap](https://getbootstrap.com/docs/5.3/components/modal/)) in your app.
 
-    ```HTML
+    ```html
     ...
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -478,7 +478,7 @@ In this section, you will implement a `views` function to add new product to the
 
 2. Add a `button` to show the modal.
 
-    ```HTML
+    ```html
     ...
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product by AJAX</button>
     ...
