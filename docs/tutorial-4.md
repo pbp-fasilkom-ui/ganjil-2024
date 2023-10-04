@@ -258,7 +258,7 @@ Silakan pelajari lebih lanjut mengenai *pseudo-class*  melalui [referensi ini](h
 * *Border*: garis tepian yang membungkus konten dan *padding*-nya
 * *Margin*: mengosongkan area di sekitar *border* (transparan)
 
-Silakan pelajari lebih lanjut mengenai *margin*, *border*, dan *padding* melalui [referensi ini](w3schools.com/css/css_boxmodel.asp).
+Silakan pelajari lebih lanjut mengenai *margin*, *border*, dan *padding* melalui [referensi ini](https://w3schools.com/css/css_boxmodel.asp).
 
 ## Pengenalan Bootstrap & Tailwind
 
