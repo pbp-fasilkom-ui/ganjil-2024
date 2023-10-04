@@ -522,7 +522,7 @@ Modal dengan form yang telah kamu buat sebelumnya belum bisa digunakan untuk men
     </script>
     ```
 
-Selamat! Kamu telah berhasil membuat aplikasi yang dapat menambahkan data secara AJAX. Bukalah <http://localhost:8000/> dan cobalah untuk mmenambahkan data produk baru pada aplikasi. Seharusnya, sekarang aplikasi tidak perlu melakukan *reload* setiap kali data produk baru ditambahkan.
+Selamat! Kamu telah berhasil membuat aplikasi yang dapat menambahkan data dengan menggunakan AJAX. Bukalah <http://localhost:8000/> dan cobalah untuk menambahkan data produk baru pada aplikasi. Seharusnya, sekarang aplikasi tidak perlu melakukan *reload* setiap kali data produk baru ditambahkan.
 
 ## Penutup
 
