@@ -48,7 +48,7 @@ Checklist for this assignment is as follows:
 
 ## Deadline
 
-The deadline for Assignment 6 is **Wednesday, 11th October 2023, at 12:00 p.m.**
+The deadline for Assignment 6 is **Friday, 13th October 2023, at 12:00 p.m.**
 
 The teaching assistants will check the last commit of the lab assignment repository, so you do not need to submit the repository link separately.
 
