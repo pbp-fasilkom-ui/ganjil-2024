@@ -48,7 +48,7 @@ Pada tugas ini, kamu akan mengimplementasikan AJAX pada aplikasi yang telah kamu
 
 ## Tenggat Waktu Pengerjaan
 
-Tenggat waktu pengerjaan Tugas 6 adalah **Rabu, 11 Oktober 2023, pukul 12.00 siang**.
+Tenggat waktu pengerjaan Tugas 6 adalah **Jumat, 13 Oktober 2023, pukul 12.00 siang**.
 
 Asisten dosen akan mengecek *last commit* dari repositori tugas lab, sehingga kamu tidak perlu mengumpulkan tautan repositori ke dalam slot submisi.
 
