@@ -18,7 +18,7 @@ Checklist for this assignment is as follows:
 
 - [ ] Modify the previously created assignment 5 to use AJAX.
   - [ ] AJAX GET
-    - [ ] Modify the codes in data table to able to use AJAX GET.
+    - [ ] Modify the codes in data cards to able to use AJAX GET.
     - [ ] Retrieve data using AJAX GET.
   - [ ] AJAX POST
     - [ ] Create a button that opens a modal with a form for adding an item.
