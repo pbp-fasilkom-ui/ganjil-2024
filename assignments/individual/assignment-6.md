@@ -18,7 +18,7 @@ Pada tugas ini, kamu akan mengimplementasikan AJAX pada aplikasi yang telah kamu
 
 - [ ] Mengubah tugas 5 yang telah dibuat sebelumnya menjadi menggunakan AJAX.
   - [ ] AJAX GET
-    - [ ] Ubahlah kode tabel data item agar dapat mendukung AJAX GET.
+    - [ ] Ubahlah kode _cards_ data item agar dapat mendukung AJAX GET.
     - [ ] Lakukan pengambilan task menggunakan AJAX GET.
   - [ ] AJAX POST
     - [ ] Buatlah sebuah tombol yang membuka sebuah modal dengan form untuk menambahkan item.
