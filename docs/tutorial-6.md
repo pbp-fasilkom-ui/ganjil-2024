@@ -1,6 +1,6 @@
 ---
 sidebar_label: Tutorial 6
-sidebar_position: X+2
+sidebar_position: 8
 Path: docs/tutorial-6
 ---
 
