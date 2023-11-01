@@ -46,7 +46,7 @@ The main benefit of Flutter is the ability to develop applications for different
     a. [Android Studio (Recommended)](https://developer.android.com/studio)
 
     b. [Visual Studio Code](https://code.visualstudio.com/)
-   
+
    > You can use Visual Studio Code for Flutter development  by installing extensions [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) and [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter).
    > 
    > You can also read the IDE functionality provided by the Flutter extension in the link above.
@@ -63,26 +63,29 @@ The main benefit of Flutter is the ability to develop applications for different
     flutter create <APP_NAME>
     cd <APP_NAME>
     ```
-    
+
 4. Run the project using the Terminal or Command Prompt.
 
     ```bash
     flutter run
     ```
-    
+
     For macOS user, there are multiple options to run a Flutter Project. The easiest way is:
     - Use [**emulator in Android Studio**](https://docs.flutter.dev/get-started/install/macos#set-up-the-android-emulator)
     - Use **Google Chrome**
-    
+
         - Run the following command to enable web support **(only needs to be done once)**:
+
         ```bash
         flutter config --enable-web
         ```
-        - Then, in your project directory, run the project in Google Chrome with the command 
+
+        - Then, in your project directory, run the project in Google Chrome with the command:
+
         ```bash
         flutter run -d chrome
         ```
-        
+
 5. You will see a screen like the one below.
 
     ![First App](https://docs.flutter.dev/assets/images/docs/get-started/ios/starter-app.png)
@@ -98,7 +101,7 @@ Before delving further into Flutter, you will organize the file structure of you
     ```dart
     import 'package:flutter/material.dart';
     ```
-    
+
 2. From the `main.dart` file, move (cut) the code from line 39 to the end, which includes the two classes below:
 
     ```dart
@@ -110,21 +113,21 @@ Before delving further into Flutter, you will organize the file structure of you
         ...
     }
     ```
-    
+
     Move this code to the newly created `menu.dart` file.
-    
+
 3. You will notice that in the `main.dart` file, there will be an error on line 34, which contains the following code:
 
     ```dart
     home: const MyHomePage(title: 'Flutter Demo Home Page'),
     ```
-    
+
     This error occurs because the `main.dart` file no longer recognizes the `MyHomePage` class, which has been moved to another file, `menu.dart`. To resolve this issue, add the following code at the beginning of the file:
-    
+
     ```dart
     import 'package:shopping_list/menu.dart';
     ```
-    
+
 4. Run the project through the Terminal or Command Prompt to ensure that the application still runs correctly.
 
 ## Tutorial: Creating a Simple Widget in Flutter
@@ -137,7 +140,7 @@ First, you can change the application's theme color to indigo.
 
 2. Change the code in your application's theme section that has the type `Material Color` to:
 
-    ```
+    ```dart
     primarySwatch: Colors.indigo,
     ```
 
@@ -147,15 +150,15 @@ After changing the application's theme color, you will convert the widget of the
 
 1. In the `main.dart` file, remove `MyHomePage(title: 'Flutter Demo Home Page')` so that it becomes:
 
-    ```
+    ```dart
     MyHomePage()
     ```
 
-2. In the `menu.dart` file, you will change the nature of the page's widget from stateful to stateless. Make the following changes in the widget section: 
-    - Replace `({super.key, required this.title})` with `({Key? key}) : super(key: key);`. 
+2. In the `menu.dart` file, you will change the nature of the page's widget from stateful to stateless. Make the following changes in the widget section:
+    - Replace `({super.key, required this.title})` with `({Key? key}) : super(key: key);`.
     - Remove `final String title;` and add the `Widget build` method so that the code looks like this:
 
-    ```
+    ```dart
     class MyHomePage extends StatelessWidget {
         MyHomePage({Key? key}) : super(key: key);
 
@@ -167,7 +170,7 @@ After changing the application's theme color, you will convert the widget of the
         }
     }
     ```
-    
+
     Don't forget to remove the **State** class that is located below the stateless widget section.
 
 After changing the nature of the menu page widget to stateless, you will add text and cards to represent items for sale.
@@ -182,20 +185,20 @@ After changing the nature of the menu page widget to stateless, you will add tex
       ShopItem(this.name, this.icon);
     }
     ```
-    
+
     Under the `MyHomePage({Key? key}) : super(key: key);` code, add items for sale (name, price, and the item's icon):
-    
-    ```
+
+    ```dart
     final List<ShopItem> items = [
         ShopItem("View Products, Icons.checklist),
         ShopItem("Add Product", Icons.add_shopping_cart),
         ShopItem("Logout", Icons.logout),
     ];
     ```
-    
+
 2. Next, add the following code inside the `Widget build` method:
 
-    ```
+    ```dart
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -244,7 +247,7 @@ After changing the nature of the menu page widget to stateless, you will add tex
 
 3. Although there may have been an error previously, you only need to create a new stateless widget to display the card.
 
-    ```
+    ```dart
     class ShopCard extends StatelessWidget {
       final ShopItem item;
 
@@ -290,16 +293,14 @@ After changing the nature of the menu page widget to stateless, you will add tex
       }
     }
     ```
-    
+
 The result of your work will look like this:
 
 ![](https://hackmd.io/_uploads/SJU7d_CGT.png)
-    
 
 ## Closing
 
 1. Congratulations! You have successfully completed Tutorial 6. 😄
-
 
 2. Run the following commands to `add`, `commit`, and `push`:
 
