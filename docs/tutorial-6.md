@@ -135,7 +135,7 @@ Pertama-tama, kamu bisa mengubah tema warna aplikasi menjadi indigo.
 2. Mengubah kode pada `main.dart` dibagian tema aplikasi kamu yang mempunyai tipe `Material Color`
 ```primarySwatch: Colors.indigo,```
 
-    Coba jalankan proyek kamu untuk melihat apakah warna tema aplikasi sudah berubah menjadi indigo.
+  Coba jalankan proyek kamu untuk melihat apakah warna tema aplikasi sudah berubah menjadi indigo.
 
 Setelah mengubah warna tema aplikasi, kamu akan mengubah sifat *widget* halaman menu menjadi *stateless*.
 

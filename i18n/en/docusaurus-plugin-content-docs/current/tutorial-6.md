@@ -8,6 +8,8 @@ Path: docs/tutorial-6
 
 Platform-Based Programming (CSGE602022) — Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2023/2024
 
+---
+
 ## Learning Objectives
 
 After completing this tutorial, students are expected to be able to:

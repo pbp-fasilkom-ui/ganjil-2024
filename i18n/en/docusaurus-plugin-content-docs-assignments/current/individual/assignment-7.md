@@ -8,6 +8,8 @@ Path: assignment/individual/assignment-7
 
 Platform-Based Programming (CSGE602022) — Organized by the Faculty of Computer Science Universitas Indonesia, Odd Semester 2023/2024
 
+---
+
 ## Assignment Description
 
 In this assignment, you have to create a Flutter application and implement things that you have learned in the tutorial.
