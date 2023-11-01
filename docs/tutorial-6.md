@@ -47,10 +47,10 @@ Keuntungan dari Flutter sendiri adalah kemampuannya untuk menciptakan aplikasi u
     a. [Android Studio (Recommended)](https://developer.android.com/studio)
 
     b. [Visual Studio Code](https://code.visualstudio.com/)
-
-    Kamu dapat menggunakan Visual Studio Code untuk Flutter dengan menginstall ekstensi [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) dan [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter).
-
-    Kamu juga dapat membaca fungsionalitas IDE yang disediakan oleh ekstensi Flutter pada tautan yang tersedia.
+   
+   > Kamu dapat menggunakan Visual Studio Code untuk Flutter dengan menginstall ekstensi [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code) dan [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter).
+   > 
+   > Kamu juga dapat membaca fungsionalitas IDE yang disediakan oleh ekstensi Flutter pada tautan yang tersedia.
 
 
 ## Tutorial: _Getting Started with Flutter_
@@ -71,6 +71,7 @@ Keuntungan dari Flutter sendiri adalah kemampuannya untuk menciptakan aplikasi u
     ```bash
     flutter run
     ```
+
     Untuk pengguna macOS, terdapat beberapa opsi untuk menjalankan aplikasi _flutter_, namun yang termudah adalah:
     1. Menggunakan [*emulator* pada Android Studio](https://docs.flutter.dev/get-started/install/macos#set-up-the-android-emulator)
     2. Menggunakan Google Chrome
@@ -87,20 +88,20 @@ Keuntungan dari Flutter sendiri adalah kemampuannya untuk menciptakan aplikasi u
 
     ![First App](https://docs.flutter.dev/assets/images/docs/get-started/ios/starter-app.png)
 
-6. Lakukan `git init` pada _root folder_ dan `add`-`commit`-`push` proyek ke sebuah repositori baru di GitHub. Kamu dapat menamai repositori barumu dengan nama `pbp-flutter-tutorial`.
+6. Lakukan `git init` pada _root folder_ dan `add`-`commit`-`push` proyek ke sebuah repositori baru di GitHub. Kamu dapat menamai repositori barumu dengan nama `shopping-list-mobile`.
 
 ---
 
 ## Tutorial: Merapikan Struktur Proyek
 
-Sebelum menyelami Flutter lebih lanjut, kita akan merapikan struktur file pada proyek kita terlebih dahulu agar kode proyek dapat lebih mudah dipahami.
+Sebelum menyelami Flutter lebih lanjut, kamu akan merapikan struktur file pada proyek kamu terlebih dahulu agar kode proyek dapat lebih mudah dipahami. Hal ini merupakan bentuk penerapan _best practice_ dalam pengembangan aplikasi, yakni [_clean architecture_](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
 
-1. Buatlah file baru bernama `menu.dart` pada direktori `shopping_list/lib`. Pada baris pertama file tersebut, tambahkan kode di bawah ini: 
+1. Buatlah file baru bernama `menu.dart` pada direktori `shopping_list/lib`. Pada baris pertama file tersebut, tambahkan kode di bawah ini:
     ```dart
     import 'package:flutter/material.dart';
     ```
 
-2. Dari file `main.dart`, pindahkan kode baris ke-39 hingga akhir yang berisi kedua class di bawah ini:  
+2. Dari file `main.dart`, pindahkan (_cut_) kode baris ke-39 hingga akhir yang berisi kedua class di bawah ini:  
     ```dart
     class MyHomePage ... {
         ...
@@ -116,7 +117,7 @@ Sebelum menyelami Flutter lebih lanjut, kita akan merapikan struktur file pada p
     ```dart
     home: const MyHomePage(title: 'Flutter Demo Home Page'),
     ```
-    Hal ini terjadi karena file `main.dart` tidak lagi mengenali class MyHomePage karena sudah kita pindahkan ke file lain, yaitu `menu.dart`. Untuk menyelesaikan masalah ini, tambahkan kode berikut ini pada awal file.
+    Hal ini terjadi karena file `main.dart` tidak lagi mengenali class MyHomePage karena sudah kamu pindahkan ke file lain, yaitu `menu.dart`. Untuk menyelesaikan masalah ini, tambahkan kode berikut ini pada awal file.
     ```dart
     import 'package:shopping_list/menu.dart';
     ``` 
@@ -126,23 +127,25 @@ Sebelum menyelami Flutter lebih lanjut, kita akan merapikan struktur file pada p
 ---
 ## Tutorial: Membuat Widget Sederhana pada Flutter
 
-Dalam tutorial ini, kita akan mempelajari cara membuat widget sederhana di Flutter. Kita akan membuat nama dari toko kita sebagai header dan card yang menandakan barang yang dijual. Saat button beli ditekan, akan keluar pemberitahuan di bagian bawah layar. 
+Dalam tutorial ini, kamu akan mempelajari cara membuat widget sederhana di Flutter. Kamu akan membuat nama dari toko kamu sebagai *header* dan membuat *card* yang menandakan barang yang dijual. Saat *button* beli ditekan, akan keluar pemberitahuan di bagian bawah layar. 
 
-Pertama-tama, kita bisa mengubah tema warna aplikasi menjadi indigo.
-1. Buka file `main.dart`
-2. Mengubah kode pada `main.dart` dibagian tema aplikasi kita yang mempunyai tipe `Material Color`
+Pertama-tama, kamu bisa mengubah tema warna aplikasi menjadi indigo.
+
+1. Buka file `main.dart`.
+2. Mengubah kode pada `main.dart` dibagian tema aplikasi kamu yang mempunyai tipe `Material Color`
 ```primarySwatch: Colors.indigo,```
 
-Coba jalankan proyek kamu untuk melihat apakah warna tema aplikasi sudah berubah menjadi hijau.
+    Coba jalankan proyek kamu untuk melihat apakah warna tema aplikasi sudah berubah menjadi indigo.
 
-Setelah mengubah warna tema aplikasi, kita akan mengubah sifat widget halaman menu menjadi stateless.
+Setelah mengubah warna tema aplikasi, kamu akan mengubah sifat *widget* halaman menu menjadi *stateless*.
 
-1. Pada pada file `main.dart`, hapus `const MyHomePage(title: 'Flutter Demo Home Page')` sehingga menjadi:
+1. Pada file `main.dart`, hapus `MyHomePage(title: 'Flutter Demo Home Page')` sehingga menjadi:
 
-    ```
+    ```dart
     MyHomePage()
     ```
-3. Pada file `main.dart`, kita akan mengubah sifat widget halaman dari stateful menjadi stateless. `Lakukan perubahan pada bagian ({super.key, required this.title})` menjadi `({Key? key}) : super(key: key);`. Hapus `final String title;` sampai bawah serta tambahkan Widget build sehingga kode terlihat seperti di bawah.
+
+3. Pada file `menu.dart`, kamu akan mengubah sifat widget halaman dari stateful menjadi stateless. Lakukan perubahan pada bagian `({super.key, required this.title})` menjadi `({Key? key}) : super(key: key);`. Hapus `final String title;` sampai bawah serta tambahkan Widget build sehingga kode terlihat seperti di bawah.
     ```
     class MyHomePage extends StatelessWidget {
         MyHomePage({Key? key}) : super(key: key);
@@ -155,109 +158,140 @@ Setelah mengubah warna tema aplikasi, kita akan mengubah sifat widget halaman me
         }
     }
     ```
-Jangan lupa untuk hapus fungsi **State** yang ada dibawah bagian stateless widget ini. 
+    Jangan lupa untuk hapus fungsi **State** yang ada dibawah bagian stateless widget ini. 
 
-Setelah mengubah sifat widget halaman menu menjadi stateless, kita akan menambahkan teks dan card untuk memperlihatkan barang yang dijual.
-1. Untuk menambahkan teks dan card, kalian dapat menambahkan barang-barang yang dijual. Kita dapat memulai dengan *define* tipe pada list kita.
-```
-class ShopItem {
-  final String name;
-  final IconData icon;
-  final double price;
+Setelah mengubah sifat widget halaman menu menjadi stateless, kamu akan menambahkan teks dan card untuk memperlihatkan barang yang dijual.
+1. Untuk menambahkan teks dan card, kalian dapat menambahkan barang-barang yang dijual. Kamu dapat memulai dengan *define* tipe pada list kamu.
+    ```dart
+    class ShopItem {
+      final String name;
+      final IconData icon;
 
-  ShopItem(this.name, this.icon, this.price);
-}
-``` 
-Lalu dibawah kode ```MyHomePage({Key? key}) : super(key: key);```, kita dapat menambahkan barang-barang yang dijual (nama, harga, dan icon barang tersebut)
-```
-  final List<ShopItem> items = [
-    ShopItem("Alarm", Icons.access_alarm, 100000),
-    ShopItem("Cart", Icons.shopping_cart, 50000),
-    ShopItem("Pizza", Icons.local_pizza, 60000),
-    ShopItem("Toothpaste", Icons.brush, 15000),
-    ShopItem("Android", Icons.phone_android, 4999999.99),
-  ];
-```
+      ShopItem(this.name, this.icon);
+    }
+    ``` 
+    Lalu dibawah kode ```MyHomePage({Key? key}) : super(key: key);```, kamu dapat menambahkan barang-barang yang dijual (nama, harga, dan icon barang tersebut)
+    ```
+    final List<ShopItem> items = [
+        ShopItem("Lihat Produk", Icons.checklist),
+        ShopItem("Tambah Produk", Icons.add_shopping_cart),
+        ShopItem("Logout", Icons.logout),
+    ];
+    ```
  
-2. Selanjutnya kita menambahkan kode dibawah ini didalam **Widget** build.
-``` 
+2. Selanjutnya kamu menambahkan kode dibawah ini didalam **Widget** build.
+    ```
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Shopping List',
-        ),
-      ),
-      body: SingleChildScrollView(
-        // Widget wrapper yang dapat discroll
-        child: Padding(
-          padding: const EdgeInsets.all(10.0), // Set padding dari halaman
-          child: Column(
-            // Widget untuk menampilkan children secara vertikal
-            children: <Widget>[
-              const Padding(
-                padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
-                // Widget Text untuk menampilkan tulisan dengan alignment center dan style yang sesuai
-                child: Text(
-                  'PBP Shop', // Text yang menandakan toko
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+          appBar: AppBar(
+            title: const Text(
+              'Shopping List',
+            ),
+          ),
+          body: SingleChildScrollView(
+            // Widget wrapper yang dapat discroll
+            child: Padding(
+              padding: const EdgeInsets.all(10.0), // Set padding dari halaman
+              child: Column(
+                // Widget untuk menampilkan children secara vertikal
+                children: <Widget>[
+                  const Padding(
+                    padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                    // Widget Text untuk menampilkan tulisan dengan alignment center dan style yang sesuai
+                    child: Text(
+                      'PBP Shop', // Text yang menandakan toko
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
+                  // Grid layout
+                  GridView.count(
+                    // Container pada card kita.
+                    primary: true,
+                    padding: const EdgeInsets.all(20),
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
+                    crossAxisCount: 3,
+                    shrinkWrap: true,
+                    children: items.map((ShopItem item) {
+                      // Iterasi untuk setiap item
+                      return ShopCard(item);
+                    }).toList(),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+    ```
+3. Walaupun sebelumnya terdapat error, namun tidak perlu khawatir, kamu hanya perlu membuat _widget stateless_ baru untuk menampilkan _card_. 
+    ```
+    class ShopCard extends StatelessWidget {
+      final ShopItem item;
+
+      const ShopCard(this.item, {super.key}); // Constructor
+
+      @override
+      Widget build(BuildContext context) {
+        return Material(
+          color: Colors.indigo,
+          child: InkWell(
+            // Area responsive terhadap sentuhan
+            onTap: () {
+              // Memunculkan SnackBar ketika diklik
+              ScaffoldMessenger.of(context)
+                ..hideCurrentSnackBar()
+                ..showSnackBar(SnackBar(
+                    content: Text("Kamu telah menekan tombol ${item.name}!")));
+            },
+            child: Container(
+              // Container untuk menyimpan Icon dan Text
+              padding: const EdgeInsets.all(8),
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      item.icon,
+                      color: Colors.white,
+                      size: 30.0,
+                    ),
+                    const Padding(padding: EdgeInsets.all(3)),
+                    Text(
+                      item.name,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Colors.white),
+                    ),
+                  ],
                 ),
               ),
-              // Grid layout
-              GridView.count(
-                // Container pada card kita.
-                primary: true,
-                padding: const EdgeInsets.all(20),
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                crossAxisCount: 3,
-                shrinkWrap: true,
-                children: items.map((ShopItem item) {
-                  // Iterasi untuk setiap item
-                  return ShopCard(item);
-                }).toList(),
-              ),
-            ],
+            ),
           ),
-        ),
-      ),
-    );
-```
-3. Walaupun sebelumnya terdapat error, namun tidak perlu khawatir, anda hanya perlu membuat widget stateless baru untuk menampilkan card 
-```
-class ShopCard extends StatelessWidget {
-  final ShopItem item;
-
-  const ShopCard(this.item, {super.key}); // Constructor
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: Colors.indigo, // Define warna pada card kita
-      child: Padding(
-        padding: const EdgeInsets.all(4.0),
-        child: Column(
-          mainAxisAlignment:
-              MainAxisAlignment.center, // Center elemen pada card
-          children: <Widget>[
-            Icon(item.icon,
-                size: 32, color: Colors.white), // Jadikan warna putih
-            Text(item.name, style: const TextStyle(color: Colors.white)),
-            Text('Rp ${item.price.toStringAsFixed(2)}',
-                style: const TextStyle(color: Colors.white),
-                textAlign: TextAlign.center),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
+        );
+      }
+    }
+    ```
 Hasil dari pekerjaan tersebut akan seperti ini:
-![](https://hackmd.io/_uploads/ryrt-OoGa.png)
+![](https://hackmd.io/_uploads/ByeYkqjzp.png)
+
+## Akhir Kata
+
+Selamat! Kamu telah menyelesaikan Tutorial 3 dengan baik. 😄
+
+1. Pelajari dan pahami kembali kode yang sudah kamu tuliskan di atas dengan baik.
+
+2. Lakukan `add`, `commit` dan `push` untuk memperbarui repositori GitHub.
+
+    ```shell
+    git add .
+    git commit -m "<pesan_commit>"
+    git push -u origin <branch_utama>
+    ```
+
+    - Ubah `<pesan_commit>` sesuai dengan keinginan. Contoh: `git commit -m "tutorial 6 selesai"`.
+    - Ubah `<branch_utama>` sesuai dengan nama branch utamamu. Contoh: `git push -u origin main` atau `git push -u origin master`.
 
 ## Referensi Tambahan
 
@@ -265,6 +299,7 @@ Hasil dari pekerjaan tersebut akan seperti ini:
 - [Write your first Flutter app, part 1](https://docs.flutter.dev/get-started/codelab)
 - [An Introduction to Flutter: The Basics by FreeCodeCamp](https://www.freecodecamp.org/news/an-introduction-to-flutter-the-basics-9fe541fd39e2/)
 - [Flutter Course for Beginners – 37-hour Cross Platform App Development Tutorial by FreeCodeCamp](https://www.youtube.com/watch?v=VPvVD8t02U8)
+- [An Introduction to Flutter Clean Architecture](https://medium.com/ruangguru/an-introduction-to-flutter-clean-architecture-ae00154001b0)
 
 ## Kontributor
 
