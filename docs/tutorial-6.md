@@ -139,7 +139,10 @@ Pertama-tama, kamu bisa mengubah tema warna aplikasi menjadi indigo.
 
 1. Buka file `main.dart`.
 2. Mengubah kode pada `main.dart` dibagian tema aplikasi kamu yang mempunyai tipe `Material Color`
-```primarySwatch: Colors.indigo,```
+
+  ```dart
+  colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+  ```
 
   Coba jalankan proyek kamu untuk melihat apakah warna tema aplikasi sudah berubah menjadi indigo.
 
@@ -292,7 +295,7 @@ Hasil dari pekerjaan tersebut akan seperti ini:
 
 ## Akhir Kata
 
-Selamat! Kamu telah menyelesaikan Tutorial 3 dengan baik. 😄
+Selamat! Kamu telah menyelesaikan Tutorial 6 dengan baik. 😄
 
 1. Pelajari dan pahami kembali kode yang sudah kamu tuliskan di atas dengan baik.
 

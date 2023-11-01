@@ -141,7 +141,7 @@ First, you can change the application's theme color to indigo.
 2. Change the code in your application's theme section that has the type `Material Color` to:
 
     ```dart
-    primarySwatch: Colors.indigo,
+    colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
     ```
 
     Try running your project to see if the application's theme color has changed to indigo.
