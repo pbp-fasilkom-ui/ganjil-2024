@@ -522,8 +522,8 @@ child: ElevatedButton(
           );
         },
       );
-    }
     _formKey.currentState!.reset();
+    }
   },
   child: const Text(
     "Save",
