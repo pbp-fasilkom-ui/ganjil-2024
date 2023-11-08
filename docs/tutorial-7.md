@@ -462,8 +462,8 @@ Sekarang, kita akan membuat sebuah form sederhana untuk memasukkan data barang p
                       );
                     },
                   );
-                }
                 _formKey.currentState!.reset();
+                }
               },
               child: const Text(
                 "Save",
