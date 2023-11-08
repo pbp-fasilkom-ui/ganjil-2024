@@ -81,7 +81,7 @@ Sama halnya dengan sebuah web, sebuah aplikasi juga dapat berinteraksi dengan pe
 Untuk mencoba sampel dari widget Form, jalankan perintah berikut:
 
 ```bash
-flutter create --sample=widgets.Form.1 formSample
+flutter create --sample=widgets.Form.1 form_sample
 ```
 
 Untuk mengetahui lebih lanjut terkait widget Form, dapat dibaca pada tautan berikut: [Flutter Form Class](https://api.flutter.dev/flutter/widgets/Form-class.html.)

@@ -78,7 +78,7 @@ Just like a website, an application can also interact with users through input a
 To try a Form widget, run the following command:
 
 ```bash
-flutter create --sample=widgets.Form.1 formSample
+flutter create --sample=widgets.Form.1 form_sample
 ```
 
 For further information about the Form widget, you can refer to the following link: [Flutter Form Class](https://api.flutter.dev/flutter/widgets/Form-class.html).
