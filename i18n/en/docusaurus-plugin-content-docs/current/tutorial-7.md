@@ -455,8 +455,8 @@ Now, we will create a simple form to enter product data into the application, al
               );
             },
           );
-        }
         _formKey.currentState!.reset();
+        }
       },
       child: const Text(
         "Save",
