@@ -28,6 +28,7 @@ The checklist for this assignment is as follows:
     - [ ] Add a button to return to the item list page.
 - [ ] Answer the following questions in the `README.md` in the root folder (please modify the `README.md` you previously created; add subheadings for each assignment):
     - [ ] Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
+    - [ ] Explain the function of CookieRequest and explain why a CookieRequest instance needs to be shared with all components in a Flutter application.
     - [ ] Explain the mechanism of fetching data from JSON until it can be displayed on Flutter.
     - [ ] Explain the authentication mechanism from entering account data on Flutter to Django authentication completion and the display of menus on Flutter.
     - [ ] List all the widgets you used in this assignment and explain their respective functions.
