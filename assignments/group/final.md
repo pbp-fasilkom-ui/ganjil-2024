@@ -51,11 +51,11 @@ Path: assignment/group/final
             <b>Tahap I (20%)</b>
             <ul>
                 <li>Pembuatan GitHub kelompok</li>
-                <li>Pembuatan <em>codebase</em> kelompok
+                <li>Pembuatan <em>codebase</em> kelompok</li>
                 <li>README.md pada GitHub yang berisi:</li>
                 <ol>
                     <li>Daftar nama anggota kelompok</li>
-                    <li>Deskripsi aplikasi (nama dan fungsi aplikasi) </li>
+                    <li>Deskripsi aplikasi (nama dan fungsi aplikasi)</li>
                     <li>Daftar modul yang diimplementasikan beserta pembagian kerja per anggota</li>
                     <li>Peran atau aktor pengguna aplikasi</li>
                     <li>Alur pengintegrasian dengan <em>web service</em> untuk terhubung dengan aplikasi web yang sudah dibuat saat Proyek Tengah Semester</li>
