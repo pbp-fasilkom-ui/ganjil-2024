@@ -13,3 +13,5 @@ Path: assignment/index
 3. Perhatikan rubrik penilaian yang tersedia di setiap slot submisi tugas untuk mendapatkan nilai sempurna.
 
 4. Apabila terdapat kesulitan, mahasiswa dapat bertanya kepada asisten dosen melalui media komunikasi yang sudah ditentukan.
+
+5. Jangan lupa untuk mendemonstrasikan hasil pengerjaan tugas kepada asisten dosen.
