@@ -115,6 +115,14 @@ Pada tutorial ini, kamu akan men-*deploy* aplikasi Flutter yang telah kalian bua
 
   ![Pembuatan Public Group](https://cdn.discordapp.com/attachments/987024899296088125/1174774965669740716/pembuatan_public_group.png?ex=6568d172&is=65565c72&hm=e4a286bc9472a991b4868500c1f51eb9d7a96dd210c48a8004f050b6ba72681f&)
 
+Jika kamu menggunakan organisasi untuk mengorganisasi kode proyekmu, maka ikuti langkah tambahan berikut. Langkah-langkah ini berfungsi untuk memberikan akses repositori kepada App Center pada GitHub.
+
+1. Buka situs [Authorized OAuth Apps](https://github.com/settings/applications) dengan akun yang terdaftar pada organisasi yang memiliki kode proyek.
+
+2. Klik `App Center`.
+
+3. Cari nama organisasi yang memiliki kode proyekmu, lalu klik tombol `Grant` untuk memberikan akses organisasi kepada App Center.
+
 Sampai sini, kamu telah melakukan pengaturan dasar pada App Center. Selanjutnya, kamu akan melakukan pengaturan skrip dan pengesahan (*sign*) pada proyek aplikasi Flutter.
 
 ## Tutorial: Pengaturan Dasar Pengesahan Aplikasi Flutter
