@@ -28,8 +28,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
     - GitHub: https://github.com/PBP-A12
 
 
-</br>
-
 ## Aplikasi Web Terbaik
 
 1. **Literasea**
@@ -58,8 +56,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
     - Tautan web: https://bookbuffet.onrender.com/
     - GitHub: https://github.com/pbp-c12-gacor
 
-
-</br>
 
 ## Aplikasi Android Terbaik
 
