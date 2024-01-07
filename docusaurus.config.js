@@ -83,6 +83,11 @@ const config = {
             position: 'left',
           },
           {
+            to: 'awards',
+            label: 'Penghargaan',
+            position: 'right',
+          },
+          {
             to: 'playground',
             label: 'Playground',
             position: 'right',
