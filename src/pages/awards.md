@@ -8,7 +8,8 @@ title: Aplikasi Tugas Kelompok Terbaik
 Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
 1. **Books Buddy**
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PCU58Op9UFc?si=GR2zFW_zJGzUluA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PCU58Op9UFc?si=GR2zFW_zJGzUluA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     - Tim Pengembang: Kelompok E06
     - Tautan web: https://books-buddy-e06-tk.pbp.cs.ui.ac.id/
@@ -17,7 +18,8 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
 
 2. **BookMate**
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PH2QZHv4Ocw?si=EulyaKbJOdycaITz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PH2QZHv4Ocw?si=EulyaKbJOdycaITz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     - Tim Pengembang: Kelompok A12
     - Tautan web: https://bookmate-a12-tk.pbp.cs.ui.ac.id/
@@ -31,7 +33,8 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 ## Aplikasi Web Terbaik
 
 1. **Literasea**
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ke7YoQnbRn8?si=N6_l3OCPlrJ313AS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ke7YoQnbRn8?si=N6_l3OCPlrJ313AS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     - Tim Pengembang: Kelompok C05
     - Tautan web: https://literasea.live/ 
