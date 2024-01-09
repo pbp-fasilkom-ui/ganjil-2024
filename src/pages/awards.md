@@ -42,6 +42,9 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
 
 2. **Lembar Pena**
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1QloQwUAgcw?si=AAk8genL18HqDNd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     - Tim Pengembang: Kelompok C09
     - [Tautan web](https://lembarpena-c09-tk.pbp.cs.ui.ac.id/)
     - [GitHub](https://github.com/PBPC09)
@@ -62,18 +65,27 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 ## Aplikasi Android Terbaik
 
 1. **LiteraLand**
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdHTeEqc03k?si=xNaj2DVBHsXOSnhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     - Tim Pengembang: Kelompok C07
     - [Unduh APK](https://install.appcenter.ms/orgs/literaland/apps/literalandmobile/distribution_groups/public)
     - [GitHub](https://github.com/LiteraLand-C07)
 
 
 2. **TBRead**
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yhxSPGHXY6k?si=GToUheKpWwFVofrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     - Tim Pengembang: Kelompok D10
     - [Unduh APK](https://install.appcenter.ms/orgs/pbp-d10/apps/tbread/distribution_groups/public)
     - [GitHub](https://github.com/PBP-D10)
 
 
 3. **Fontana**
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CAWdL03zkLc?si=XPkVZihp4ND5CykB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     - Tim Pengembang: Kelompok F12
     - [Unduh APK](https://github.com/PBP-F12/bookshelve-flutter/releases)
     - [GitHub](https://github.com/PBP-F12)
