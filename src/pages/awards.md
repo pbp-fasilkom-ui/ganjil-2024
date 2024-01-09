@@ -1,8 +1,10 @@
 ---
-title: Aplikasi Tugas Kelompok Terbaik
+title: Penghargaan Aplikasi Tugas Kelompok Terbaik
 ---
 
-# Aplikasi Tugas Kelompok Terbaik
+# Penghargaan Aplikasi Tugas Kelompok Terbaik
+
+---
 
 ## Aplikasi Terbaik 
 Aplikasi web terbaik sekaligus aplikasi Android terbaik.
