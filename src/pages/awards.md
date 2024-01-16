@@ -16,7 +16,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
     - Tim Pengembang: Kelompok E06
     - [Tautan web](https://books-buddy-e06-tk.pbp.cs.ui.ac.id/)
     - [Unduh APK](https://install.appcenter.ms/orgs/jago-bikin-web/apps/books-buddy/distribution_groups/public)
-    - [GitHub](https://github.com/jago-bikin-web)
 
 
 2. **BookMate**
@@ -27,7 +26,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
     - [Tautan web](https://bookmate-a12-tk.pbp.cs.ui.ac.id/)
     - [Tautan web alternatif](https://ester-gracia21-bookmate.stndar.dev/)
     - [Unduh APK](https://install.appcenter.ms/orgs/pebepe/apps/bookmate/distribution_groups/public)
-    - [GitHub](https://github.com/PBP-A12)
 
 
 ## Aplikasi Web Terbaik
@@ -38,7 +36,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok C05
     - [Tautan web](https://literasea.live/)
-    - [GitHub](https://github.com/C05-PBP-2023)
 
 
 2. **Lembar Pena**
@@ -47,13 +44,11 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok C09
     - [Tautan web](https://lembarpena-c09-tk.pbp.cs.ui.ac.id/)
-    - [GitHub](https://github.com/PBPC09)
 
 
 3. **ReadMe**
     - Tim Pengembang: Kelompok C11
     - [Tautan web](https://readme-c11-tk.pbp.cs.ui.ac.id/)
-    - [GitHub](https://github.com/Readme-org)
 
 
 4. **BookBuffet**
@@ -62,7 +57,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok C12
     - [Tautan web](https://bookbuffet.onrender.com/)
-    - [GitHub](https://github.com/pbp-c12-gacor)
 
 
 ## Aplikasi Android Terbaik
@@ -73,7 +67,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok C07
     - [Unduh APK](https://install.appcenter.ms/orgs/literaland/apps/literalandmobile/distribution_groups/public)
-    - [GitHub](https://github.com/LiteraLand-C07)
 
 
 2. **TBRead**
@@ -82,7 +75,6 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok D10
     - [Unduh APK](https://install.appcenter.ms/orgs/pbp-d10/apps/tbread/distribution_groups/public)
-    - [GitHub](https://github.com/PBP-D10)
 
 
 3. **Fontana**
@@ -91,4 +83,3 @@ Aplikasi web terbaik sekaligus aplikasi Android terbaik.
 
     - Tim Pengembang: Kelompok F12
     - [Unduh APK](https://github.com/PBP-F12/bookshelve-flutter/releases)
-    - [GitHub](https://github.com/PBP-F12)
