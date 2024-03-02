@@ -94,7 +94,7 @@ Jika terdapat lebih dari satu _style_ yang didefinisikan untuk suatu elemen, mak
 
 ## *Static files* pada Django
 
-Pada _framework_ Django, terdapat _file-file_ yang disebut dengan _static files_. _Static files_ merupakan _file-file_ pendukung HTML pada suatu situs web. Contoh _static files_ antara lain seperti CSS, JavaScript dan gambar. 
+Pada _framework_ Django, terdapat _file-file_ yang disebut dengan _static files_. _Static files_ merupakan _file-file_ pendukung HTML pada suatu situs web. Contoh _static files_ adalah CSS, JavaScript, dan gambar. 
 
 Pengaturan untuk _static files_ terletak pada _file_ **`settings.py`**:
 
@@ -106,7 +106,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = 'static'
 ...
 ```
-Pada `settings.py`, terdapat: 
+Pada `settings.py`, terdapat:
+
 - `STATIC_ROOT` yang menentukan _absolute path_ ke direktori _static files_ ketika menjalankan perintah `collectstatic` pada proyek dan terdapat `STATIC_URL` yang merupakan URL yang dapat diakses publik untuk memperoleh _static files_ tersebut.
 - `STATIC_URL` yang merupakan URL yang dapat diakses publik untuk memperoleh _static files_ tersebut.
 
